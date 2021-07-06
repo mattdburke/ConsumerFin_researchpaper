@@ -127,74 +127,44 @@ bartlett.test(WordCount~Category, data=df1)
 
 # Principal component analysis and plot
 
-
-
-
 xpca <- data.frame(df1$FogIndex, 
 		df1$TermstoWords, 
 		df1$PCcomplex, 
 		df1$FinancetoComplex, 
 		df1$WordsperSentence, 
 		df1$WordCount)
-
 princompbjf<-princomp(xpca, cor=TRUE, scores=TRUE)
-
-princompbjf <- princompbjf$rotation
-
 summary(princompbjf)
-
 loadings(princompbjf)
-
-pc1<-princompbjf$scores[,1]
-
-pc2<-princompbjf$scores[,2]
-
-pca.frame <- data.frame(pc1, pc2)
-
-pch <- rep(c("0", "1", "2"), c(31, 31, 31))
-
-with(pca.frame, plot(pc1, pc2, pch=pch, xlab="Score on first principle component", ylab="Score on second principle component"))
-
-legend(0, -4, c("Pay Day Loan", "Personal Loan", "Credit Card"), pch=c("0","1","2"))
-
-
-
-
-pc1<-princompbjf$scores[,1]
-pc2<-princompbjf$scores[,2]
+pc1<-princompbjf$scores[,1]*-1
+pc2<-princompbjf$scores[,2]*-1
 pca.frame <- data.frame(pc1, pc2)
 pch <- rep(c("0", "1", "2"), c(31, 31, 31))
 with(pca.frame, plot(pc1, pc2, pch=pch, xlab="Score on first principle component", ylab="Score on second principle component"))
 legend(0, -4, c("Pay Day Loan", "Personal Loan", "Credit Card"), pch=c("0","1","2"))
-
 
 # Analysis of credit card corpus
 
-credit.frame<-read.csv("credit_corpus.csv", header=TRUE)
-ID<-credit.frame[,1]
-ComplexCount<-credit.frame[,2]
-FinancetoComplex<-credit.frame[,3]
-F<-credit.frame[,4]
-FK<-credit.frame[,5]
-Fog<-credit.frame[,6]
-Sentcount<-credit.frame[,7]
-Terms<-credit.frame[,8]
-Wordcount<-credit.frame[,9]
-credit.frame["TermstoWords"]<-Terms/Wordcount
-credit.frame["PCcomplex"]<-ComplexCount/Wordcount
-credit.frame["SPCcomplex"]<-SuperComplexCount/Wordcount
-credit.frame["WordsperSentence"]<-Wordcount/Sentcount
-TermstoWords<-Terms/Wordcount
-PCcomplex<-ComplexCount/Wordcount
-SPCcomplex<-SuperComplexCount/Wordcount
-WordsperSentence<-Wordcount/Sentcount
-summary(credit.frame)
-sd(credit.frame$FogIndex)
-sd(credit.frame$TermstoWords)
-sd(credit.frame$PCcomplex)
-sd(credit.frame$FinancetoComplex)
-sd(credit.frame$WordsperSentence)
-sd(credit.frame$WordCount)
+df2<-read.csv("credit_corpus.csv", header=TRUE)
+
+df2[3:12] <- lapply(df2[3:12], as.numeric)
+
+df2$TermstoWords <- df2$Terms/df2$WordCount
+df2$PCcomplex<-df2$ComplexCount/df2$WordCount
+df2$SPCcomplex<-df2$SuperComplexCount/df2$WordCount
+df2$WordsperSentence<-df2$WordCount/df2$SentCount
+
+table_7 <- rbind( c(  mean(df2$FogIndex)   ,  sd(df2$FogIndex)  ,  min(df2$FogIndex)  ,  max(df2$FogIndex) ) , 
+					c(mean(df2$TermstoWords)   ,  sd(df2$TermstoWords)  ,  min(df2$TermstoWords)  ,  max(df2$TermstoWords)) , 
+					c(mean(df2$PCcomplex)   ,  sd(df2$PCcomplex)  ,  min(df2$PCcomplex)  ,  max(df2$PCcomplex)) , 
+					c(mean(df2$FinancetoComplex)   ,  sd(df2$FinancetoComplex)  ,  min(df2$FinancetoComplex)  ,  max(df2$FinancetoComplex)) , 
+					c(mean(df2$WordsperSentence)   ,  sd(df2$WordsperSentence)  ,  min(df2$WordsperSentence)  ,  max(df2$WordsperSentence)) , 
+					c(mean(df2$WordCount)   ,  sd(df2$WordCount)  ,  min(df2$WordCount)  ,  max(df2$WordCount)))
+
+options(scipen=2)
+table_7 <- as.data.frame(table_7)
+table_7
+
 
 
 
