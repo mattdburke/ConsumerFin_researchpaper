@@ -1,0 +1,4457 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    
+    <script>
+        function getCookie(name) {
+            var value = "; " + document.cookie;
+            var parts = value.split("; " + name + "=");
+            if (parts.length == 2) return parts.pop().split(";").shift();
+        }
+
+        var items = 'Personal,Loans,Personal'.split(',');
+        var pageDepth = items.length;
+        var ccpCookie = getCookie('CCP');
+        var ccpCookieValues = {cat2:'on',cat3:'on',cat4:'on'};
+        var newReturning = 'undefined' !== typeof getCookie('CCP_OTM') ? "returning" : "new";
+
+        if ('undefined' !== typeof ccpCookie) {
+            var decodedCcpCookieValues = JSON.parse(decodeURIComponent(getCookie('CCP')));
+            if ('undefined' !== typeof decodedCcpCookieValues.publicuser){
+                ccpCookieValues = decodedCcpCookieValues.publicuser
+            }
+        }
+
+        var digitalData = {
+            page: {
+                pageInfo: {
+                    pageName: items.join(':'),
+                    cmsPageName: 'personal',
+                    cmsPath: '\/content\/barclaysuk\/en\/personal\/loans\/personal',
+                    level1: items[0],
+                    level2: pageDepth > 1 ? items[1] : '',
+                    level3: pageDepth > 2 ? items[2] : '',
+                    level4: pageDepth > 3 ? items[3] : '',
+                    urlProtocol: document.location.protocol,
+                    urlHost: document.location.hostname,
+                    urlPath: document.location.pathname,
+                    urlQueryString: document.location.search,
+                    urlHash: document.location.hash,
+                    urlContent: "",
+                    templateId: "\/apps\/componentlibrary\/templates\/tier_2_offering",
+                    pageId:  "",
+                    breadcrumb: items.join('>'),
+                    accessibility: "",
+                    segment: items[0],
+                    pageVersion: "",
+                    impressions: "",
+                    buildVersion: "",
+                    applicationId: "",
+                    applicationType: "",
+
+                    // W3C Data Layer recommendation
+                    timeStamp: new Date(),
+                    destinationURL: document.location,
+                    referringURL: document.referrer,
+                    breadCrumbs: items
+                },
+                searchInfo: {}
+            },
+            user: {
+                ccp: {
+                    cat2: ccpCookieValues.cat2,
+                    cat3: ccpCookieValues.cat3,
+                    cat4: ccpCookieValues.cat4
+                },
+                newReturning: newReturning
+            },
+            events: []
+        };
+    </script>
+
+    <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Personal loans | Personal loan calculator | Barclays</title>
+<meta property="og:title" content="Personal loans | Personal loan calculator | Barclays"/>
+<meta name="twitter:title" content="Personal loans | Personal loan calculator | Barclays">
+
+<meta name="description" content="Our personal loan calculator is designed to help you estimate your repayments and loan rate according to the amount you would like to borrow. "/>
+<meta property="og:description" content="Our personal loan calculator is designed to help you estimate your repayments and loan rate according to the amount you would like to borrow. "/>
+<meta name="twitter:description" content="Our personal loan calculator is designed to help you estimate your repayments and loan rate according to the amount you would like to borrow. ">
+
+<meta property="og:type" content="article"/>
+<meta name="twitter:card" content="summary">
+
+<meta property="og:locale" content="en_GB"/>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
+
+
+<meta name="robots" content="index,follow"/>
+
+
+    <link rel="canonical" href="https://www.barclays.co.uk/loans/personal/"/>
+    <meta property="og:url" content="https://www.barclays.co.uk/loans/personal/"/>
+    <meta name="twitter:url" content="https://www.barclays.co.uk/loans/personal/">
+
+
+<link rel="shortcut icon" type="image/x-icon" href="/content/dam/icons/favicons/barclays.ico">
+
+
+
+    
+        
+            <meta property="og:image" content="/content/dam/lifestyle-images/personal/loans/loans_bloan__3_1.large.medium_quality.jpg">
+            <meta name="twitter:image" content="/content/dam/lifestyle-images/personal/loans/loans_bloan__3_1.large.medium_quality.jpg">
+        
+    
+
+    
+        <link rel="preload" href="/content/dam/lifestyle-images/personal/loans/loans_bloan__16_9.xxsmall.medium_quality.jpg" as="image" media="(max-width: 479px)">
+        <link rel="preload" href="/content/dam/lifestyle-images/personal/loans/loans_bloan__16_9.xsmall.medium_quality.jpg" as="image" media="(min-width: 480px and max-width: 767px)">
+        <link rel="preload" href="/content/dam/lifestyle-images/personal/loans/loans_bloan__3_1.small.medium_quality.jpg" as="image" media="(min-width: 768px and max-width: 1023px)">
+        <link rel="preload" href="/content/dam/lifestyle-images/personal/loans/loans_bloan__3_1.large.medium_quality.jpg" as="image" media="(min-width: 1024px and max-width: 1439px)">
+        <link rel="preload" href="/content/dam/lifestyle-images/personal/loans/loans_bloan__3_1.large.medium_quality.jpg" as="image" media="(min-width: 1440px)">
+    
+    
+        <link rel="preload" href="/content/dam/lifestyle-images/personal/loans/loans_bloan__16_9.xxsmall.medium_quality.jpg" as="image" media="(max-width: 479px)"><!-- 16:9 -->
+        <link rel="preload" href="/content/dam/lifestyle-images/personal/loans/loans_bloan__16_9.xsmall.medium_quality.jpg" as="image" media="(min-width: 480px and max-width: 767px)"><!-- 16:9 -->
+        <link rel="preload" href="/content/dam/lifestyle-images/personal/loans/loans_bloan__3_1.small.medium_quality.jpg" as="image" media="(min-width: 768px and max-width: 1023px)"><!-- 3:1 -->
+        <link rel="preload" href="/content/dam/lifestyle-images/personal/loans/loans_bloan__16_9.xsmall.medium_quality.jpg" as="image" media="(min-width: 1024px)"><!-- 16:9 -->
+    
+
+
+
+<link rel="preload" href="/etc/designs/bdl1.7.4/clientlib/fonts/expertsans-b14-light-webfont.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/etc/designs/bdl1.7.4/clientlib/fonts/expertsans-regular-webfont.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/etc/designs/bdl1.7.4/clientlib/fonts/expertsans-light-webfont.woff" as="font" type="font/woff" crossorigin>
+
+
+<link rel="preconnect" href="//smetrics.barclays.co.uk" crossorigin>
+
+
+
+    
+        <meta name="msvalidate.01" content="685D4DAE5295BC9C156623C34F17A6A6"/>
+        <meta name="google-site-verification" content="FyxsTQlL50FynDQWDnxthDes72UsbBAdfgWuSVpbfNo"/>
+    
+    
+    
+
+
+<script src="/etc/designs/componentlibrary/commonlibs/js/libs/modernizr.min.js"></script>
+
+<!--[if IE 8]>
+<script type="text/javascript">
+    if (!window.console) console = {log: function() {}};
+</script>
+<![endif]-->
+
+    
+    
+<script type="text/javascript" src="/etc.clientlibs/clientlibs/granite/jquery.js"></script>
+<script type="text/javascript" src="/etc.clientlibs/clientlibs/granite/utils.js"></script>
+
+
+
+<script type="text/javascript">
+            (function() {
+                window.ContextHub = window.ContextHub || {};
+
+                /* setting paths */
+                ContextHub.Paths = ContextHub.Paths || {};
+                ContextHub.Paths.CONTEXTHUB_PATH = "/etc/cloudsettings/default/contexthub";
+                ContextHub.Paths.RESOURCE_PATH = "\/etc\/cloudsettings\/default\/contexthub";
+                ContextHub.Paths.SEGMENTATION_PATH = "\/etc\/segmentation\/contexthub";
+                ContextHub.Paths.CQ_CONTEXT_PATH = "";
+
+                /* setting initial constants */
+                ContextHub.Constants = ContextHub.Constants || {};
+                ContextHub.Constants.ANONYMOUS_HOME = "/home/users/5/5N6Wra2_6P_0xPaGZAVM";
+                ContextHub.Constants.MODE = "no-ui";
+            }());
+        </script><script src="/etc/cloudsettings/default/contexthub.kernel.js" type="text/javascript"></script>
+
+
+
+
+
+    
+<link rel="stylesheet" href="/etc/designs/bdl1.7.4/clientlib.css" type="text/css">
+<link rel="stylesheet" href="/etc/designs/componentlibrary/clientlib.css" type="text/css">
+<link rel="stylesheet" href="/etc/designs/componentlibrary/commonlibs.css" type="text/css">
+<link rel="stylesheet" href="/etc/designs/componentlibrary/coverFinder/clientlib.css" type="text/css">
+
+
+
+
+
+    
+<link rel="stylesheet" href="/etc/designs/bdl-next/clientlib.css" type="text/css">
+
+
+
+
+
+
+
+<!-- this is the page sub header libs -->
+
+
+<!--[if lte IE 8]>
+<script src="/etc/designs/componentlibrary/clientlib/js/libs/jquery.min.js"></script>
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<script src="/etc/designs/componentlibrary/clientlib/js/libs/jquery.2.min.js"></script>
+<!--<![endif]-->
+
+<script>
+    window.CQ={};
+    window.$CQ={};
+</script>
+
+<script src="/etc/designs/componentlibrary/commonlibs/js/libs/cookiepolicy.js"></script>
+
+
+
+
+
+
+
+</head>
+<body data-runmode-publish="true" data-template="/apps/componentlibrary/templates/tier_2_offering">
+
+
+
+
+
+<div class="section"><div class="new"></div>
+</div><div class="iparys_inherited"><div class="custom_tags_head_sitewide iparsys parsys"><div class="custom_tag parbase section">
+
+
+
+
+
+
+   	
+	
+		
+		
+	      <script src="//www.barclays.co.uk/content/dam/javascript/dtm/10c5c24111a80198c720f4558824e666d9507056/satelliteLib-40c998aca480396ad8ae465dd779e6cfa907108e.js"></script>
+	   	
+		
+	   	
+	
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="section"><div class="new"></div>
+</div><div class="iparys_inherited"><div class="navigation iparsys parsys"><div class="reference parbase section">
+
+	
+	
+	
+	
+	
+	
+		
+			
+				<div>
+    
+
+    
+    
+    <div class="skiplinks mod-skiplinks">
+
+        <div class="skiplinks-container">
+            <span id="skiplinks-label">Skip to:</span>
+            <ul>
+                <li><a id="home-link" aria-labelledby="skiplinks-label home-link" href="/" accesskey="1">Home</a></li>
+                <li><a id="content-link" aria-labelledby="skiplinks-label content-link" href="#skip-nav" accesskey="s">Content</a></li>
+                <li><a id="footer-link" aria-labelledby="skiplinks-label footer-link" href="#skip-main" accesskey="4">Footer navigation</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <header class="global-header mod-globalheader mobile">
+
+
+        
+        
+
+
+    
+
+    
+
+    <div class="segment" data-component-type="Header">
+        <nav class="segment-wrapper" data-component-type="Link" role="navigation" aria-label="Product type navigation">
+            <ul class="segment-body">
+                <li class="active">
+                    <a href="/" class="segment-item active">Personal</a>
+                </li>
+            
+                <li>
+                    <a href="/premier-banking" class="segment-item ">Premier</a>
+                </li>
+            
+                <li>
+                    <a href="/business-banking" class="segment-item ">Business</a>
+                </li>
+            
+                <li>
+                    <a href="/wealth-management" class="segment-item ">Wealth Management</a>
+                </li>
+            
+                <li>
+                    <a href="https://www.barclayscorporate.com/" class="segment-item ">Corporate</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    
+
+    <div class="header-main" data-component-type="Header">
+
+        <div class="header-container">
+            <div class="logo-section">
+                <div class="logo" data-component-type="Link:Logo">
+                    <a href="/" title="Barclays">
+                        <span class="icon icon-barclays-eagle logo-eagle">
+                            
+                        </span>
+                        <span class="icon icon-barclays-wordmark logo-title">
+                            
+                        </span>
+                    </a>
+
+                    
+                        
+                    
+
+                </div>
+            </div>
+
+            <div>
+
+
+    <div class="search-bar" id="search-bar" data-quick-search-path="/content/barclaysuk/en/help/results.quick-search.json?q={query}&origin={origin}&_charset_=UTF-8" data-main-search-path="/content/barclaysuk/en/help/results.search.json" data-top-search-path="/content/barclaysuk/en/help/results/jcr:content/search_bar.topanswers.json">
+        <form action="/help/results" data-component-type="SiteSearch" method="get">
+            <div data-widget="accessible-autocomplete">
+                <!-- Keep label for accessibility on screen readers -->
+                <label for="search-input" class="access">How can we help?</label>
+
+                <div class="search-input-wrapper">
+                    <input autocomplete="off" name="q" id="search-input" type="text" placeholder="How can we help?" class="autocomplete-search-field mod-input search-input-nav" aria-expanded="false" aria-autocomplete="both" aria-controls="quicksearch-body" aria-activedescendant=""/>
+                </div>
+                <a href="#" role="button" id="clear-search-input" aria-describedby="ariaClearField" class="search-clear">Clear search field</a>
+                <button type="submit" class="btn-search btn btn-primary btn-sm">Search</button>
+                <button class="search-close xsmall">Cancel
+                    <span class="access">Search</span>
+                </button>
+                <input type="hidden" name="_charset_" value="utf-8"/>
+                <input type="hidden" name="offset" value="0"/>
+                <input type="hidden" name="origin" value="www.barclays.co.uk"/>
+                <script>$(document).ready(function () {
+                    if (/^\/help/.test(window.location.pathname)) {
+                        $('input[name="origin"]').val("help.barclays.co.uk");
+                    }
+                });</script>
+                
+<div id="quicksearch-body" class="headersearch" aria-hidden="true">
+    <div class="headersearch-container">
+        <div class="headersearch-body">
+            <div class="headersearch-results">
+                <div class="headersearch-heading">Unsure what to search for? Other customers found these links helpful.</div>
+                <div class="quick-search--results" id="primary-results-nav"></div>
+                <div class="quick-search--results" id="secondary-results-nav"></div>
+            </div>
+        </div>
+    </div>
+</div>
+                
+                    
+                    <div id="commonquestions-body" class="headersearch" aria-hidden="true">
+                        <div class="headersearch-container">
+                            <div class="headersearch-body" data-display-common-questions="true">
+                                <div class="headersearch-heading">Unsure what to search for? Other customers found these links helpful.</div>
+                                <div class="headersearch-results">
+                                    <ul id="common-questions-list" role="listbox" class="autocomplete-list">
+                                        
+                                            
+
+                                                
+                                                
+
+                                                
+                                                
+
+                                                
+                                                
+
+                                                
+                                                
+
+                                                
+                                                <li role="option" aria-selected="false" class="  headersearch-item">
+                                                    <a role="link" class="common-questions--list-entry" data-list-index="1" tabindex="-1" href="https://www.barclays.co.uk/help/international/payments/making-and-receiving-international-payments/what-iban-swiftcode.html">What are IBANs and SWIFT codes?</a>
+                                                </li>
+                                            
+                                        
+                                            
+
+                                                
+                                                
+
+                                                
+                                                
+
+                                                
+                                                
+
+                                                
+                                                
+
+                                                
+                                                <li role="option" aria-selected="false" class="  headersearch-item">
+                                                    <a role="link" class="common-questions--list-entry" data-list-index="2" tabindex="-1" href="https://www.barclays.co.uk/help/payments/payment-information/unrecognised-transaction.html">What do I do if I’ve spotted a payment transaction I don’t recognise?</a>
+                                                </li>
+                                            
+                                        
+                                            
+
+                                                
+                                                
+
+                                                
+                                                
+
+                                                
+                                                
+
+                                                
+                                                
+
+                                                
+                                                <li role="option" aria-selected="false" class="  headersearch-item">
+                                                    <a role="link" class="common-questions--list-entry" data-list-index="3" tabindex="-1" href="https://www.barclays.co.uk/help/customer-services/branch-opening-hours.html">What’s the address, the opening hours and phone number of my Barclays branch? </a>
+                                                </li>
+                                            
+                                        
+                                            
+
+                                                
+                                                
+
+                                                
+                                                
+
+                                                
+                                                
+
+                                                
+                                                
+                                                    
+                                                
+
+                                                
+                                                <li role="option" aria-selected="false" class=" is-last-mobile headersearch-item">
+                                                    <a role="link" class="common-questions--list-entry" data-list-index="4" tabindex="-1" href="https://www.barclays.co.uk/help/accounts/account-services/find-sort-code.html">How do I find my sort code and account number?</a>
+                                                </li>
+                                            
+                                        
+                                            
+
+                                                
+                                                
+
+                                                
+                                                
+
+                                                
+                                                
+                                                    
+                                                
+
+                                                
+                                                
+
+                                                
+                                                <li role="option" aria-selected="false" class="is-desktop-only  headersearch-item">
+                                                    <a role="link" class="common-questions--list-entry" data-list-index="5" tabindex="-1" href="https://www.barclays.co.uk/help/accounts/statements-balances/cheque-clearing.html">What is the cheque clearing cycle and how long does it take?</a>
+                                                </li>
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div aria-live="assertive" class="sr-only"></div>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+
+            <div class="utilities" data-component-type="Header:Utilities">
+                <a href="https://bank.barclays.co.uk/olb/authlogin/loginAppContainer.do" class="login btn btn-primary btn-sm">Log In</a>
+                <ul>
+                    
+                        
+                        
+                        <li>
+                            <a href="https://bank.barclays.co.uk/olb/registration/registerAppContainer.do" class="btn-none" target="_self">Register</a>
+                        </li>
+                        
+                    
+                        
+                        
+                        
+                        <li class="contact">
+                            <a href="/contact-us" target="_self"><span>Contact us</span></a>
+                        </li>
+                    
+                        
+                        
+                        
+                        <li class="branch-finder">
+                            <a href="/branchfinder" target="_self"><span>Find a branch</span></a>
+                        </li>
+                    
+                    <li class="search"><a href="#search" aria-haspopup="true"><span>Search</span></a></li>
+                    <li class="hamburger">
+                        <a href="#menu" aria-expanded="false" aria-label="Navigation Menu"><span>Menu</span></a>
+                    </li>
+                </ul>
+            </div>
+            
+            
+
+
+
+
+        </div>
+
+    </div>
+
+    <div class="header-nav">
+
+        <div class="header-container" data-component-type="Header">
+
+            <nav class="main-nav" role="navigation" aria-label="Main navigation">
+                <ul>
+                    <li aria-haspopup="true" data-component-type="MenuItemLevel1">
+                        <a href="#" aria-expanded="false">Bank <span class="access">menu item level 1</span></a>
+                        <div class="nav-l2" aria-hidden="true">
+                            
+                            <ul>
+                                <li aria-haspopup="true" data-component-type="MenuItemLevel2">
+                                    
+
+    
+
+
+    
+
+    <a href="#" aria-expanded="false" data-nav-link="#">Bank accounts <span class="access">menu item level 2</span></a>
+    <div class="nav-l3" aria-hidden="true">
+    <ul>
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/current-accounts/" target="_self" title="Current accounts">Current accounts <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/current-accounts/bank-account/" target="_self" title="Barclays Bank Account">Barclays Bank Account <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/premier-banking/current-accounts/" target="_self" title="Premier Current Accounts">Premier Current Accounts <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/business-banking/accounts/" target="_self" title="Business current accounts">Business current accounts <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/current-accounts/switch-bank-account/" target="_self" title="Switching bank account to Barclays">Switching bank account to Barclays <span class="access">menu item level 3</span></a>
+        </li>
+    </ul>
+    </div>
+
+    
+
+
+
+
+                                </li>
+                                <li aria-haspopup="true" data-component-type="MenuItemLevel2">
+                                    
+
+    
+
+
+    
+
+    <a href="#" aria-expanded="false" data-nav-link="#">Reward and offers <span class="access">menu item level 2</span></a>
+    <div class="nav-l3" aria-hidden="true">
+    <ul>
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/current-accounts/blue-rewards/" target="_self" title="Barclays Blue Rewards">Barclays Blue Rewards <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/current-accounts/cashback/" target="_self" title="Cashback">Cashback <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/current-accounts/customise-my-account/" target="_self" title="Customise my account">Customise my account <span class="access">menu item level 3</span></a>
+        </li>
+    </ul>
+    </div>
+
+    
+
+
+
+
+                                </li>
+                                <li aria-haspopup="true" data-component-type="MenuItemLevel2">
+                                    
+
+    
+
+
+    
+
+    <a href="#" aria-expanded="false" data-nav-link="#">Account services <span class="access">menu item level 2</span></a>
+    <div class="nav-l3" aria-hidden="true">
+    <ul>
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/ways-to-bank/online-banking/" target="_self" title="Explore Online Banking">Explore Online Banking <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/ways-to-bank/mobile-banking-app/" target="_self" title="Barclays Mobile Banking app">Barclays Mobile Banking app <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/ways-to-bank/cloud-it/" target="_self" title="Barclays Cloud It">Barclays Cloud It <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="https://bank.barclays.co.uk/olb/registration/registerAppContainer.do" target="_self" title="Register for Online Banking">Register for Online Banking <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/travel/" target="_self" title="Travelling abroad">Travelling abroad <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/important-information/control-your-data/" target="_self" title="Control your data">Control your data <span class="access">menu item level 3</span></a>
+        </li>
+    </ul>
+    </div>
+
+    
+
+
+
+
+                                </li>
+                                <li aria-haspopup="true" data-component-type="MenuItemLevel2">
+                                    
+
+    
+
+
+    
+
+    <a href="#" aria-expanded="false" data-nav-link="#">Payment services <span class="access">menu item level 2</span></a>
+    <div class="nav-l3" aria-hidden="true">
+    <ul>
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="https://www.barclays.co.uk/ways-to-pay" target="_self" title="Explore all payment services">Explore all payment services <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/current-accounts/debit-cards/" target="_self" title="Debit cards">Debit cards <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/ways-to-bank/international-payments/" target="_self" title="International payments">International payments <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="https://www.pingit.com/" target="_self" title="Pingit">Pingit <span class="access">menu item level 3</span></a>
+        </li>
+    </ul>
+    </div>
+
+    
+
+
+
+
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                
+                    <li aria-haspopup="true" data-component-type="MenuItemLevel1">
+                        <a href="#" aria-expanded="false">Borrow <span class="access">menu item level 1</span></a>
+                        <div class="nav-l2" aria-hidden="true">
+                            
+                            <ul>
+                                <li aria-haspopup="true" data-component-type="MenuItemLevel2">
+                                    
+
+    
+
+
+    
+
+    <a href="#" aria-expanded="false" data-nav-link="#">Loans and overdraft <span class="access">menu item level 2</span></a>
+    <div class="nav-l3" aria-hidden="true">
+    <ul>
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/loans/" target="_self" title="All loans products">All loans products <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/loans/personal/" target="_self" title="Personal loan">Personal loan <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/loans/car-loans/" target="_self" title="Car loan">Car loan <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/loans/debt-consolidation-loans/" target="_self" title="Debt consolidation loans">Debt consolidation loans <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/loans/home-improvement-loan/" target="_self" title="Home improvement loan">Home improvement loan <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/loans/top-up-loan/" target="_self" title="Top-up loan">Top-up loan <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/current-accounts/bank-account/overdrafts/" target="_self" title="Barclays Overdraft">Barclays Overdraft <span class="access">menu item level 3</span></a>
+        </li>
+    </ul>
+    </div>
+
+    
+
+
+
+
+                                </li>
+                                <li aria-haspopup="true" data-component-type="MenuItemLevel2">
+                                    
+
+    
+
+
+    
+
+    <a href="#" aria-expanded="false" data-nav-link="#">Credit cards <span class="access">menu item level 2</span></a>
+    <div class="nav-l3" aria-hidden="true">
+    <ul>
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/credit-cards/" target="_self" title="Compare credit cards">Compare credit cards <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/credit-cards/check-your-eligibility/" target="_self" title="Check your eligibility">Check your eligibility <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/credit-cards/balance-transfer-credit-cards/" target="_self" title="Balance transfer credit cards">Balance transfer credit cards <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/credit-cards/purchase-credit-cards/" target="_self" title="Purchase credit cards">Purchase credit cards <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/credit-cards/credit-building-credit-cards/" target="_self" title="Credit building credit cards">Credit building credit cards <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/credit-cards/reward-cards/" target="_self" title="Reward credit cards">Reward credit cards <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="https://bcol.barclaycard.co.uk/ecom/as2/initialLogon.do?x=49&y=35?TC=QXBCA23302" target="_self" title="Log in to mybarclaycard">Log in to mybarclaycard <span class="access">menu item level 3</span></a>
+        </li>
+    </ul>
+    </div>
+
+    
+
+
+
+
+                                </li>
+                                <li aria-haspopup="true" data-component-type="MenuItemLevel2">
+                                    
+
+    
+
+
+    
+
+    <a href="#" aria-expanded="false" data-nav-link="#">Tips <span class="access">menu item level 2</span></a>
+    <div class="nav-l3" aria-hidden="true">
+    <ul>
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="https://www.barclays.co.uk/waystoborrow" target="_self" title="Ways to borrow">Ways to borrow <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/credit-cards/what-is-a-credit-rating/" target="_self" title="What is a credit rating ">What is a credit rating  <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/loans/money-worries/" target="_self" title="Money worries">Money worries <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/loans/what-does-apr-mean/" target="_self" title="What does APR mean?">What does APR mean? <span class="access">menu item level 3</span></a>
+        </li>
+    </ul>
+    </div>
+
+    
+
+
+
+
+                                </li>
+                                <li aria-haspopup="true" data-component-type="MenuItemLevel2">
+                                    
+
+    
+
+
+    
+
+    <a href="#" aria-expanded="false" data-nav-link="#">Tools <span class="access">menu item level 2</span></a>
+    <div class="nav-l3" aria-hidden="true">
+    <ul>
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/loans/budget-planner/" target="_self" title="Budget planner">Budget planner <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/current-accounts/credit-manager/" target="_self" title="Credit Manager">Credit Manager <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/loans/calculator/" target="_self" title="Personal loan calculator">Personal loan calculator <span class="access">menu item level 3</span></a>
+        </li>
+    </ul>
+    </div>
+
+    
+
+
+
+
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                
+                    <li aria-haspopup="true" data-component-type="MenuItemLevel1">
+                        <a href="#" aria-expanded="false">Credit cards <span class="access">menu item level 1</span></a>
+                        <div class="nav-l2" aria-hidden="true">
+                            
+                            <ul>
+                                <li aria-haspopup="true" data-component-type="MenuItemLevel2">
+                                    
+
+    
+
+
+    
+
+    <a href="#" aria-expanded="false" data-nav-link="#">Card options <span class="access">menu item level 2</span></a>
+    <div class="nav-l3" aria-hidden="true">
+    <ul>
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/credit-cards/" target="_self" title="Compare credit cards">Compare credit cards <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/credit-cards/check-your-eligibility/" target="_self" title="Check your eligibility">Check your eligibility <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/credit-cards/balance-transfer-credit-cards/" target="_self" title="Balance transfer credit cards">Balance transfer credit cards <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/credit-cards/purchase-credit-cards/" target="_self" title="Purchase credit cards">Purchase credit cards <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/credit-cards/credit-building-credit-cards/" target="_self" title="Credit building credit cards">Credit building credit cards <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/credit-cards/reward-cards/" target="_self" title="Reward credit cards">Reward credit cards <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="https://as2r-clb-bcc4-bcol.barclaycard.co.uk/ecom/as2/initialLogon.do?x=49&y=35?TC=QXBCA23302" target="_self" title="Log in to mybarclaycard">Log in to mybarclaycard <span class="access">menu item level 3</span></a>
+        </li>
+    </ul>
+    </div>
+
+    
+
+
+
+
+                                </li>
+                                <li aria-haspopup="true" data-component-type="MenuItemLevel2">
+                                    
+
+    
+
+
+    
+
+    
+    <div class="nav-l3" aria-hidden="true">
+    
+    </div>
+
+    
+
+
+
+
+                                </li>
+                                <li aria-haspopup="true" data-component-type="MenuItemLevel2">
+                                    
+
+    
+
+
+    
+
+    
+    <div class="nav-l3" aria-hidden="true">
+    
+    </div>
+
+    
+
+
+
+
+                                </li>
+                                <li aria-haspopup="true" data-component-type="MenuItemLevel2">
+                                    
+
+    
+
+
+    
+
+    
+    <div class="nav-l3" aria-hidden="true">
+    
+    </div>
+
+    
+
+
+
+
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                
+                    <li aria-haspopup="true" data-component-type="MenuItemLevel1">
+                        <a href="#" aria-expanded="false">Save and invest <span class="access">menu item level 1</span></a>
+                        <div class="nav-l2" aria-hidden="true">
+                            
+                            <ul>
+                                <li aria-haspopup="true" data-component-type="MenuItemLevel2">
+                                    
+
+    
+
+
+    
+
+    <a href="#" aria-expanded="false" data-nav-link="#">Cash ISAs <span class="access">menu item level 2</span></a>
+    <div class="nav-l3" aria-hidden="true">
+    <ul>
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/savings/isas/" target="_self" title="Compare ISA accounts">Compare ISA accounts <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/savings/isas/instant-cash-isa/" target="_self" title="Instant Cash ISA">Instant Cash ISA <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/savings/isas/2-year-flexible-cash-isa/" target="_self" title="Flexible Cash ISA">Flexible Cash ISA <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/savings/isas/help-to-buy-isa/" target="_self" title="Help to Buy: ISA">Help to Buy: ISA <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/savings/isas/guide-to-isas/" target="_self" title="Guide to ISAs">Guide to ISAs <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/premier-banking/two-year-flexible-cash-isa/" target="_self" title="Premier Flexible Cash ISA">Premier Flexible Cash ISA <span class="access">menu item level 3</span></a>
+        </li>
+    </ul>
+    </div>
+
+    
+
+
+
+
+                                </li>
+                                <li aria-haspopup="true" data-component-type="MenuItemLevel2">
+                                    
+
+    
+
+
+    
+
+    <a href="#" aria-expanded="false" data-nav-link="#">Savings <span class="access">menu item level 2</span></a>
+    <div class="nav-l3" aria-hidden="true">
+    <ul>
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/savings/instant-access/" target="_self" title="Compare Savings accounts">Compare Savings accounts <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/savings/instant-access/everyday-saver/" target="_self" title="Everyday Saver">Everyday Saver <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/savings/instant-access/childrens-instant-saver/" target="_self" title="Children’s Instant Saver">Children’s Instant Saver <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/savings/instant-access/childrens-regular-saver/" target="_self" title="Children&#39;s Regular Saver">Children&#39;s Regular Saver <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/savings/interest-rates/" target="_self" title="All interest rates">All interest rates <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/savings/quick-guide-to-saving/" target="_self" title="Guide to Savings">Guide to Savings <span class="access">menu item level 3</span></a>
+        </li>
+    </ul>
+    </div>
+
+    
+
+
+
+
+                                </li>
+                                <li aria-haspopup="true" data-component-type="MenuItemLevel2">
+                                    
+
+    
+
+
+    
+
+    <a href="#" aria-expanded="false" data-nav-link="#">Bonds <span class="access">menu item level 2</span></a>
+    <div class="nav-l3" aria-hidden="true">
+    <ul>
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/savings/bonds/" target="_self" title="Compare Bonds accounts">Compare Bonds accounts <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/savings/bonds/1-year-fixed-rate-savings-bond/" target="_self" title="Fixed-rate Bond">Fixed-rate Bond <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/savings/bonds/2-year-flexible-bond/" target="_self" title="Flexible Bond - 2 Year">Flexible Bond - 2 Year <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/savings/bonds/3-year-flexible-income-bond/" target="_self" title="Flexible Income Bond - 3 Year">Flexible Income Bond - 3 Year <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/premier-banking/two-year-flexible-bond/" target="_self" title="Premier Flexible Bond - 2 Year">Premier Flexible Bond - 2 Year <span class="access">menu item level 3</span></a>
+        </li>
+    </ul>
+    </div>
+
+    
+
+
+
+
+                                </li>
+                                <li aria-haspopup="true" data-component-type="MenuItemLevel2">
+                                    
+
+    
+
+
+    
+
+    <a href="#" aria-expanded="false" data-nav-link="#">Investments <span class="access">menu item level 2</span></a>
+    <div class="nav-l3" aria-hidden="true">
+    <ul>
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/investments/" target="_self" title="All investment products">All investment products <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/investments/investment-account/" target="_self" title="Investment Account">Investment Account <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/investments/investment-isa/" target="_self" title="Investment ISA">Investment ISA <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="https://www.smartinvestor.barclays.co.uk/" target="_blank" title="Smart Investor">Smart Investor <span class="access">menu item level 3</span></a>
+        </li>
+    </ul>
+    </div>
+
+    
+
+
+
+
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                
+                    <li aria-haspopup="true" data-component-type="MenuItemLevel1">
+                        <a href="#" aria-expanded="false">Mortgage <span class="access">menu item level 1</span></a>
+                        <div class="nav-l2" aria-hidden="true">
+                            
+                            <ul>
+                                <li aria-haspopup="true" data-component-type="MenuItemLevel2">
+                                    
+
+    
+
+
+    
+
+    <a href="#" aria-expanded="false" data-nav-link="#">Our mortgages <span class="access">menu item level 2</span></a>
+    <div class="nav-l3" aria-hidden="true">
+    <ul>
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/mortgages/" target="_self" title="All mortgage services">All mortgage services <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/mortgages/first-time-buyers/" target="_self" title="First-time buyers">First-time buyers <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/mortgages/remortgage/" target="_self" title="Remortgage to Barclays">Remortgage to Barclays <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/mortgages/moving-home/" target="_self" title="Moving home">Moving home <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/mortgages/buy-to-let/" target="_self" title="Buy-to-let">Buy-to-let <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/mortgages/existing-customer-centre/" target="_self" title="Existing mortgage customers ">Existing mortgage customers  <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/mortgages/help-to-buy/" target="_self" title="Help to buy mortgages">Help to buy mortgages <span class="access">menu item level 3</span></a>
+        </li>
+    </ul>
+    </div>
+
+    
+
+
+
+
+                                </li>
+                                <li aria-haspopup="true" data-component-type="MenuItemLevel2">
+                                    
+
+    
+
+
+    
+
+    <a href="#" aria-expanded="false" data-nav-link="#">Products <span class="access">menu item level 2</span></a>
+    <div class="nav-l3" aria-hidden="true">
+    <ul>
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/mortgages/options/" target="_self" title="All mortgages ">All mortgages  <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/mortgages/best-mortgage-rates/" target="_self" title="Mortgage rates and charges">Mortgage rates and charges <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/mortgages/fixed-rate-mortgage/" target="_self" title="Fixed-rate mortgages">Fixed-rate mortgages <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/mortgages/tracker-mortgages/" target="_self" title="Tracker mortgages">Tracker mortgages <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/mortgages/offset-mortgage/" target="_self" title="Offset mortgages">Offset mortgages <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/mortgages/buy-to-let/mortgage/" target="_self" title="Buy-to-let mortgages">Buy-to-let mortgages <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/mortgages/family-springboard-mortgage/" target="_self" title="Family Springboard Mortgage">Family Springboard Mortgage <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/mortgages/green-home-mortgage/" target="_self" title="Green Home Mortgage">Green Home Mortgage <span class="access">menu item level 3</span></a>
+        </li>
+    </ul>
+    </div>
+
+    
+
+
+
+
+                                </li>
+                                <li aria-haspopup="true" data-component-type="MenuItemLevel2">
+                                    
+
+    
+
+
+    
+
+    <a href="#" aria-expanded="false" data-nav-link="#">Tools <span class="access">menu item level 2</span></a>
+    <div class="nav-l3" aria-hidden="true">
+    <ul>
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/mortgages/tools/" target="_self" title="Mortgage tools">Mortgage tools <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/mortgages/mortgage-calculator/" target="_self" title="Mortgage calculators">Mortgage calculators <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/mortgages/mortgage-calculator/interest-rate-calculator/" target="_self" title="Interest rate calculator">Interest rate calculator <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/mortgages/base-rate-information/" target="_self" title="Base Rate information">Base Rate information <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/mortgages/mortgage-calculator/offset-mortgage-calculator/" target="_self" title="Offset mortgage calculator">Offset mortgage calculator <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/ways-to-bank/track-it/" target="_self" title="Track an application">Track an application <span class="access">menu item level 3</span></a>
+        </li>
+    </ul>
+    </div>
+
+    
+
+
+
+
+                                </li>
+                                <li aria-haspopup="true" data-component-type="MenuItemLevel2">
+                                    
+
+    
+
+
+    
+
+    <a href="#" aria-expanded="false" data-nav-link="#">Apply <span class="access">menu item level 2</span></a>
+    <div class="nav-l3" aria-hidden="true">
+    <ul>
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/mortgages/how-to-get-a-mortgage/" target="_self" title="How to get a mortgage">How to get a mortgage <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/mortgages/agreement-in-principle/" target="_self" title="Agreement in Principle (AiP)">Agreement in Principle (AiP) <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/mortgages/agreement-in-principle/" target="_self" title="Resume AiP">Resume AiP <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/mortgages/existing-customer-centre/mortgage/" target="_self" title="Switch Barclays mortgage">Switch Barclays mortgage <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/mortgages/appointment/" target="_self" title="Making an appointment">Making an appointment <span class="access">menu item level 3</span></a>
+        </li>
+    </ul>
+    </div>
+
+    
+
+
+
+
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                
+                    <li aria-haspopup="true" data-component-type="MenuItemLevel1">
+                        <a href="#" aria-expanded="false">Insure <span class="access">menu item level 1</span></a>
+                        <div class="nav-l2" aria-hidden="true">
+                            
+                            <ul>
+                                <li aria-haspopup="true" data-component-type="MenuItemLevel2">
+                                    
+
+    
+
+
+    
+
+    <a href="#" aria-expanded="false" data-nav-link="#">Home insurance <span class="access">menu item level 2</span></a>
+    <div class="nav-l3" aria-hidden="true">
+    <ul>
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/insurance/home-insurance/" target="_self" title="Barclays Home Insurance">Barclays Home Insurance <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/insurance/home-insurance/landlord-insurance/" target="_self" title="Barclays Landlord Insurance">Barclays Landlord Insurance <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/insurance/home-insurance/student-contents-insurance/" target="_self" title="Student contents insurance">Student contents insurance <span class="access">menu item level 3</span></a>
+        </li>
+    </ul>
+    </div>
+
+    
+
+
+
+
+                                </li>
+                                <li aria-haspopup="true" data-component-type="MenuItemLevel2">
+                                    
+
+    
+
+
+    
+
+    <a href="#" aria-expanded="false" data-nav-link="#">Life insurance <span class="access">menu item level 2</span></a>
+    <div class="nav-l3" aria-hidden="true">
+    <ul>
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/insurance/life-insurance/" target="_self" title="All life insurance">All life insurance <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/insurance/life-insurance/life-cover-with-aviva/" target="_self" title="Life insurance">Life insurance <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/insurance/life-insurance/barclays-life-insurance-for-mortgage-holders/" target="_self" title="Life insurance for mortgage holders">Life insurance for mortgage holders <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/insurance/life-insurance/mortgage-life-insurance/" target="_self" title="Life insurance with critical illness cover">Life insurance with critical illness cover <span class="access">menu item level 3</span></a>
+        </li>
+    </ul>
+    </div>
+
+    
+
+
+
+
+                                </li>
+                                <li aria-haspopup="true" data-component-type="MenuItemLevel2">
+                                    
+
+    
+
+
+    
+
+    <a href="#" aria-expanded="false" data-nav-link="#">Travel insurance <span class="access">menu item level 2</span></a>
+    <div class="nav-l3" aria-hidden="true">
+    <ul>
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/insurance/travel-insurance/" target="_self" title="All travel insurance">All travel insurance <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/insurance/travel-insurance/travel-pack/" target="_self" title="Travel with breakdown cover">Travel with breakdown cover <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/insurance/travel-insurance/travel-plus-pack/" target="_self" title="Travel with breakdown cover and airport lounges">Travel with breakdown cover and airport lounges <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/travel/" target="_self" title="Travel services">Travel services <span class="access">menu item level 3</span></a>
+        </li>
+    </ul>
+    </div>
+
+    
+
+
+
+
+                                </li>
+                                <li aria-haspopup="true" data-component-type="MenuItemLevel2">
+                                    
+
+    
+
+
+    
+
+    <a href="#" aria-expanded="false" data-nav-link="#">Phone and gadget cover <span class="access">menu item level 2</span></a>
+    <div class="nav-l3" aria-hidden="true">
+    <ul>
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/insurance/gadget-and-mobile-phone-insurance/" target="_self" title="Phone and gadget insurance">Phone and gadget insurance <span class="access">menu item level 3</span></a>
+        </li>
+    </ul>
+    </div>
+
+    
+
+
+
+
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                
+                    <li aria-haspopup="true" data-component-type="MenuItemLevel1">
+                        <a href="#" aria-expanded="false">Service and support <span class="access">menu item level 1</span></a>
+                        <div class="nav-l2" aria-hidden="true">
+                            
+                            <ul>
+                                <li aria-haspopup="true" data-component-type="MenuItemLevel2">
+                                    
+
+    
+
+
+    
+
+    <a href="#" aria-expanded="false" data-nav-link="#">Help and support <span class="access">menu item level 2</span></a>
+    <div class="nav-l3" aria-hidden="true">
+    <ul>
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/help/" target="_self" title="Help">Help <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/current-accounts/dormant-lost-accounts/" target="_self" title="Dormant and lost accounts">Dormant and lost accounts <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/security/fraud/" target="_self" title="Fraud prevention">Fraud prevention <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/branch-finder/" target="_self" title="Branch Finder">Branch Finder <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/contact-us/" target="_self" title="Contact us">Contact us <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="https://status.barclays/" target="_self" title="Service status">Service status <span class="access">menu item level 3</span></a>
+        </li>
+    </ul>
+    </div>
+
+    
+
+
+
+
+                                </li>
+                                <li aria-haspopup="true" data-component-type="MenuItemLevel2">
+                                    
+
+    
+
+
+    
+
+    <a href="#" aria-expanded="false" data-nav-link="#">Account services <span class="access">menu item level 2</span></a>
+    <div class="nav-l3" aria-hidden="true">
+    <ul>
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/ways-to-bank/online-banking/" target="_self" title="Explore Online Banking">Explore Online Banking <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/ways-to-bank/mobile-banking-app/" target="_self" title="Bank on your mobile">Bank on your mobile <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="https://www.pingit.com/" target="_self" title="Barclays Pingit">Barclays Pingit <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/digital-confidence/eagles/" target="_self" title="Digital Eagles">Digital Eagles <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="https://labs.uk.barclays/" target="_self" title="Eagle Labs">Eagle Labs <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/important-information/control-your-data/" target="_self" title="Control your data">Control your data <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/accessibility/" target="_self" title="Accessibility">Accessibility <span class="access">menu item level 3</span></a>
+        </li>
+    </ul>
+    </div>
+
+    
+
+
+
+
+                                </li>
+                                <li aria-haspopup="true" data-component-type="MenuItemLevel2">
+                                    
+
+    
+
+
+    
+
+    <a href="#" aria-expanded="false" data-nav-link="#">Tools <span class="access">menu item level 2</span></a>
+    <div class="nav-l3" aria-hidden="true">
+    <ul>
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/business-banking/business-abroad/guide-to-exporting/" target="_self" title="Guide to exporting">Guide to exporting <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/travel/foreign-currency-exchange/" target="_self" title="Foreign currency">Foreign currency <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/help/international/payments/making-and-receiving-international-payments/generate-iban/" target="_self" title="How can I generate an IBAN?">How can I generate an IBAN? <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/digital-confidence/" target="_self" title="Digital confidence">Digital confidence <span class="access">menu item level 3</span></a>
+        </li>
+    </ul>
+    </div>
+
+    
+
+
+
+
+                                </li>
+                                <li aria-haspopup="true" data-component-type="MenuItemLevel2">
+                                    
+
+    
+
+
+    
+
+    <a href="#" aria-expanded="false" data-nav-link="#">Tips and guides <span class="access">menu item level 2</span></a>
+    <div class="nav-l3" aria-hidden="true">
+    <ul>
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/journal/" target="_self" title="Barclays Journal">Barclays Journal <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/loans/money-worries/" target="_self" title="Money worries">Money worries <span class="access">menu item level 3</span></a>
+        </li>
+    </ul>
+    </div>
+
+    
+
+
+
+
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                
+                    <li aria-haspopup="true" data-component-type="MenuItemLevel1">
+                        <a href="#" aria-expanded="false">Security and privacy <span class="access">menu item level 1</span></a>
+                        <div class="nav-l2" aria-hidden="true">
+                            
+                            <ul>
+                                <li aria-haspopup="true" data-component-type="MenuItemLevel2">
+                                    
+
+    
+
+
+    
+
+    <a href="#" aria-expanded="false" data-nav-link="#">Your data <span class="access">menu item level 2</span></a>
+    <div class="nav-l3" aria-hidden="true">
+    <ul>
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/security/digisafe/" target="_self" title="Digisafe">Digisafe <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/important-information/control-your-data/" target="_self" title="Control your privacy and data">Control your privacy and data <span class="access">menu item level 3</span></a>
+        </li>
+    </ul>
+    </div>
+
+    
+
+
+
+
+                                </li>
+                                <li aria-haspopup="true" data-component-type="MenuItemLevel2">
+                                    
+
+    
+
+
+    
+
+    <a href="#" aria-expanded="false" data-nav-link="#">Fraud <span class="access">menu item level 2</span></a>
+    <div class="nav-l3" aria-hidden="true">
+    <ul>
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/security/fraud/" target="_self" title="Fraud prevention">Fraud prevention <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/security/how-fraudsters-make-contact/" target="_self" title="How fraudsters could contact you">How fraudsters could contact you <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/security/financial-scams/" target="_self" title="Financial scams">Financial scams <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/security/card-fraud/" target="_self" title="Credit card fraud">Credit card fraud <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/security/fraud-prevention-features/" target="_self" title="Fraud prevention features">Fraud prevention features <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/security/protecting-your-account/" target="_self" title="Keeping your money safe">Keeping your money safe <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/security/keep-your-accounts-safe/" target="_self" title="How to keep your account safe">How to keep your account safe <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/security/digitally-safe-quiz/" target="_self" title="Digitally safe quiz">Digitally safe quiz <span class="access">menu item level 3</span></a>
+        </li>
+    </ul>
+    </div>
+
+    
+
+
+
+
+                                </li>
+                                <li aria-haspopup="true" data-component-type="MenuItemLevel2">
+                                    
+
+    
+
+
+    
+
+    <a href="#" aria-expanded="false" data-nav-link="#">Tools and support <span class="access">menu item level 2</span></a>
+    <div class="nav-l3" aria-hidden="true">
+    <ul>
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/security/phone-number-lookup/" target="_self" title="Phone number checker">Phone number checker <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/security/reporting-fraud/" target="_self" title="Reporting fraud">Reporting fraud <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/help/reporting-fraud/reporting-fraud/" target="_self" title="How do I report fraud on one of my accounts?">How do I report fraud on one of my accounts? <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/help/reporting-fraud/reporting-fraud/" target="_self" title="FAQs">FAQs <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="https://events.uk.barclays/teaandteach" target="_self" title="Tea and Teach">Tea and Teach <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/security/mobile-and-online-banking-security/" target="_self" title="Online and mobile banking security">Online and mobile banking security <span class="access">menu item level 3</span></a>
+        </li>
+    </ul>
+    </div>
+
+    
+
+
+
+
+                                </li>
+                                <li aria-haspopup="true" data-component-type="MenuItemLevel2">
+                                    
+
+    
+
+
+    
+
+    
+    <div class="nav-l3" aria-hidden="true">
+    
+    </div>
+
+    
+
+
+
+
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                
+                    <li aria-haspopup="true" data-component-type="MenuItemLevel1">
+                        <a href="#" aria-expanded="false">Moments <span class="access">menu item level 1</span></a>
+                        <div class="nav-l2" aria-hidden="true">
+                            
+                            <ul>
+                                <li aria-haspopup="true" data-component-type="MenuItemLevel2">
+                                    
+
+    
+
+
+    
+
+    <a href="#" aria-expanded="false" data-nav-link="#">Studying and graduation <span class="access">menu item level 2</span></a>
+    <div class="nav-l3" aria-hidden="true">
+    <ul>
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/going-to-university/" target="_self" title="Going to uni">Going to uni <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/moments/your-child-and-university/" target="_self" title="Your child and university">Your child and university <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/journal/life-after-graduation/" target="_self" title="Life after graduation">Life after graduation <span class="access">menu item level 3</span></a>
+        </li>
+    </ul>
+    </div>
+
+    
+
+
+
+
+                                </li>
+                                <li aria-haspopup="true" data-component-type="MenuItemLevel2">
+                                    
+
+    
+
+
+    
+
+    <a href="#" aria-expanded="false" data-nav-link="#">Support for life <span class="access">menu item level 2</span></a>
+    <div class="nav-l3" aria-hidden="true">
+    <ul>
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/money-management/" target="_self" title="Money management">Money management <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/mortgages/first-time-buyers/" target="_self" title="Buying your first home">Buying your first home <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/digital-confidence/" target="_self" title="Getting digital skills">Getting digital skills <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/travel/" target="_self" title="Travelling abroad">Travelling abroad <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/moments/improving-your-home/" target="_self" title="Improving your home">Improving your home <span class="access">menu item level 3</span></a>
+        </li>
+    </ul>
+    </div>
+
+    
+
+
+
+
+                                </li>
+                                <li aria-haspopup="true" data-component-type="MenuItemLevel2">
+                                    
+
+    
+
+
+    
+
+    <a href="#" aria-expanded="false" data-nav-link="#">Your future <span class="access">menu item level 2</span></a>
+    <div class="nav-l3" aria-hidden="true">
+    <ul>
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/first-job/" target="_self" title="Your first job">Your first job <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/starting-a-family/" target="_self" title="Starting a family">Starting a family <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/moments/new-to-the-uk/" target="_self" title="Moving to the UK">Moving to the UK <span class="access">menu item level 3</span></a>
+        </li>
+    
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/moments/getting-married/" target="_self" title="Getting married">Getting married <span class="access">menu item level 3</span></a>
+        </li>
+    </ul>
+    </div>
+
+    
+
+
+
+
+                                </li>
+                                <li aria-haspopup="true" data-component-type="MenuItemLevel2">
+                                    
+
+    
+
+
+    
+
+    <a href="#" aria-expanded="false" data-nav-link="#">More life moments <span class="access">menu item level 2</span></a>
+    <div class="nav-l3" aria-hidden="true">
+    <ul>
+        <li aria-controls="contentSection" data-component-type="MenuItemLevel3">
+            <a href="/moments/" target="_self" title="Explore all moments">Explore all moments <span class="access">menu item level 3</span></a>
+        </li>
+    </ul>
+    </div>
+
+    
+
+
+
+
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </div>
+
+
+
+
+    </header>
+
+</div>
+			
+		
+		
+	
+</div>
+</div>
+</div>
+
+
+
+<div class="section"><div class="new"></div>
+</div><div class="iparys_inherited"><div class="cookies iparsys parsys"><div class="cookies parbase section">
+        
+
+    <div class="mod-cookieprompt cookieprompt js-cookie-panel" data-component-type="CookiesWarning" role="alert">
+        <div class="container-fluid">
+
+            <div class="row cookieprompt-wrapper">
+
+                <div class="col-xs-12 col-md-9 col-lg-10">
+                    <h2 class="h3" role="heading" aria-level="2">Updated cookies policy - you&#39;ll see this message only once.</h2>
+                    <div class="cookieprompt-content">
+                        
+    
+    
+
+    
+    
+    <p>Barclays uses cookies on this website. They help us to know a little bit about you and how you use our website, which improves the browsing experience and marketing - both for you and for others. They are stored locally on your computer or mobile device. To accept cookies continue browsing as normal. Or go to the <a href="https://www.barclays.co.uk/P1242680796797">cookies policy </a>for more information and preferences.<br />
+</p>
+
+
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-3 col-lg-2 accptclose-btn">
+                    <a href="#" class="cookieprompt-button btn btn-secondary btn-sm cookie-close" role="button">Accept and close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="section"><div class="new"></div>
+</div><div class="iparys_inherited"><div class="upgrade-browser iparsys parsys"><div class="upgrade-browser parbase section">
+    
+
+    
+        <!--[if lt IE 9]>
+        <div class="upgrade-browser-banner message-region notification" role="alert">
+            <p class="i-msg-info h4">Please upgrade your browser</p>
+            <p>To have the best experience using our site, please upgrade to one of the latest browsers.</p>
+
+        </div>
+        <![endif]-->
+    
+</div>
+</div>
+</div>
+
+
+
+
+<main class="main" role="main" id="main-content">
+
+    <!-- Placeholder <a> tag to ensure main content receives focus with skip link -->
+    <div class="skipwrapper"><a id="skip-nav" name="skip-nav">-</a></div>
+
+    
+    
+    
+
+    <section data-component-type="Hero">
+        
+        
+    <div class="container-fluid">
+        <div class="row jumbo jumbo-white">
+            
+            <div class="col-xs-12">
+                
+    
+    <div>
+      <div class="jumbo-breadcrumb">
+        <div class="jumbo-breadcrumb-body">   
+          <ul class="breadcrumb" data-component-type="Breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
+            <li>Back to:</li>
+            <li property="itemListElement" typeof="ListItem">
+              <a property="item" typeof="WebPage" href="/loans/">
+                <span property="name">Compare our loans</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div> 
+    </div>
+
+
+            </div>
+            <div class="col-md-6 no-padding ">
+                
+                <picture>
+                    
+                        <source srcset="/content/dam/lifestyle-images/personal/loans/loans_bloan__16_9.xsmall.medium_quality.jpg" media="(min-width: 1024px)">
+                        <source srcset="/content/dam/lifestyle-images/personal/loans/loans_bloan__3_1.small.medium_quality.jpg" media="(min-width: 768px)">
+                        <source srcset="/content/dam/lifestyle-images/personal/loans/loans_bloan__16_9.xsmall.medium_quality.jpg" media="(min-width: 480px)">
+                        <source srcset="/content/dam/lifestyle-images/personal/loans/loans_bloan__16_9.xxsmall.medium_quality.jpg">
+                    
+                    <img class="jumbo-media" src="/content/dam/lifestyle-images/personal/loans/loans_bloan__16_9.large.medium_quality.jpg">
+                </picture>
+            </div>
+
+            <div class="col-md-6 padding-top-20px md-padding-left-right-30px ">
+                <div class="jumbo-content aperture-left">
+                    
+                    <h1 class="h2 jumbo-title">Personal loan</h1>
+                    <p class="h4 jumbo-tagline">Want to know your loan rate?</p>
+                </div>
+
+                <div class="jumbo-content">
+                    
+                    
+                    
+    
+    
+
+    
+    
+    <p>If you have a current account with us, you can check to see if you have a provisional loan limit before you apply – without affecting your credit rating<sup>1</sup>.</p>
+<p><b>All loans are subject to status. Early settlement fees apply.</b></p>
+
+
+                    
+
+
+
+
+
+    
+    
+    
+        
+        <ul data-component-type="CTA" class="btn-holder">
+            <li>
+                
+    <a href="#getaquote" class='btn btn-primary' data-add-queryparams="false">Here’s how to check</a>
+
+            </li>
+            
+        </ul>
+    
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+        
+        
+    </section>
+
+    
+        <div>
+            <section class="wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    
+
+
+    <div>
+        
+
+
+
+
+
+    
+    
+
+
+    <section class="wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    
+
+
+
+
+
+	    
+
+	        <div class="row flex-height">
+	            
+    <div class="col-sm-6">
+        <div class="column-color--default same-height">
+              
+
+
+
+
+
+    
+    
+
+    
+    
+    <p>✔ Personal price quote – with no credit footprint</p>
+<p>✔ Quick and easy application<sup>2</sup></p>
+<p>✔ Comes with a price guarantee (conditions apply)</p>
+
+
+
+
+
+
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="column-color--default same-height">
+             
+
+
+
+
+
+    
+
+    <div class="loans-apr" id="loans-apr" data-component-type="LoansCalcApr" data-json-path="/content/dam/json-files/loans-calculator-files/loans-calculator-rates-pers-apr.json">
+        <p class="dynamic-labels">
+            <span class="loans-promo dynamic-rate rep-res6">0</span>
+            <span id="dynamic-apr-label1" class="loans-promo">APR Representative</span><br/>
+            <span id="dynamic-apr-label2">on loans of</span><br/>
+            <span class="loans-promo rep-amt">0</span>
+        </p>
+            
+    
+    
+
+    
+    
+    <p>over 2-5 years (your rate may differ<sup>3</sup> )</p>
+
+
+    </div>
+
+
+
+
+
+
+        </div>
+    </div>
+
+	        </div>
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    
+    
+
+
+    <section class="wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    
+
+
+
+
+
+
+
+
+   
+      
+   
+   
+   
+   <ul class="Accordion " data-component-type="Accordion" data-accordion-multiple="true">
+      
+      
+        
+      
+      
+      
+      
+      
+      
+         
+         
+      
+      
+
+      <li class="Accordion-item " data-accordion-expanded="true">
+        <h2 class="Accordion-title ">
+          <a href="#whygetabarclayloan" class="Accordion-titleLink" role="button">
+            
+            <span data-shortTitle="Why Barclayloan?">Why get a Barclayloan?</span>
+          </a>
+        </h2>
+        
+        <div id="whygetabarclayloan" class="Accordion-content">
+          <article class="Accordion-body">
+
+
+
+
+
+	    
+
+	        <div class="row flex-height">
+	            
+    <div class="col-sm-6">
+        <div class="column-color--default same-height">
+              
+
+
+
+
+
+    
+    
+
+    
+    
+    <p><span class="body"><span class="h3">Know your personal rate before you apply</span></span></p>
+<p><span class="body">A representative APR is the rate that most people will get, but yours could be different. With some lenders, you won’t know your actual rate until you’ve applied. And if you’re not happy with the APR you’re offered, your credit rating could still be affected even if you don’t take out the loan. We’re different – in many cases we can give you a personalised price quote up front, with no impact on your credit score.</span></p>
+<p><span class="body"><span class="h3">You could get your money straightaway</span></span></p>
+<p><span class="body">If you apply online<sup>1</sup></span> and your application is approved, provided you can print or download your agreement and sign it online between 7am and 10:30pm, we'll usually transfer the money to your current account straightaway<sup>2</sup>.</p>
+<p><span class="body"><span class="h3">Price guarantee</span></span></p>
+<p><span class="body">If you take out a Barclayloan and another lender offers you a like-for-like unsecured loan with a lower APR, you can claim under our guarantee within 30 days of the date we signed your Barclayloan agreement. We’ll reduce the interest rate to produce an APR equal to the competing offer and recalculate your monthly repayments to reflect the reduced interest rate. See our full <a href="/loans/our-price-guarantee/" target="_self">price guarantee terms and conditions</a>.</span></p>
+
+
+
+
+
+
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="column-color--default same-height">
+             
+
+
+
+
+
+    
+    
+
+    
+    
+    <p><span class="body"><span class="h3">Fixed monthly repayments</span></span></p>
+<p><span class="body">Fixed repayments can help you to budget.</span></p>
+<p><span class="body"><span class="h3">Choose your payment term</span></span></p>
+<p><span class="body">Depending on the loan amount.</span></p>
+<p><span class="body"><span class="h3">Top-up option</span></span></p>
+<p><span class="body">Already have a Barclayloan and need more funds? You can apply <a href="/loans/top-up-loan/" target="_self">to increase your borrowing with us</a>. </span></p>
+<p><span class="body">If you just want to take out a second loan instead of topping up, that could be an option too.</span></p>
+<p><span class="body"><span class="h3">Repaying your loan early</span></span></p>
+<p><span class="body">You have the right to repay your loan early, in part or full, at any time. We’ll charge a fee equal to 30 days’ interest on the amount you’re repaying, as well as any other interest that’s due.</span></p>
+
+
+
+
+
+
+        </div>
+    </div>
+
+	        </div>
+
+
+
+
+
+</article>
+         </div>
+      </li>
+   
+      
+      
+      
+      
+      
+        
+      
+      
+      
+         
+         
+      
+      
+
+      <li class="Accordion-item " data-accordion-expanded="false">
+        <h2 class="Accordion-title ">
+          <a href="#eligibility" class="Accordion-titleLink" role="button">
+            
+            <span data-shortTitle="Eligibility">Eligibility</span>
+          </a>
+        </h2>
+        
+        <div id="eligibility" class="Accordion-content">
+          <article class="Accordion-body">
+
+
+
+
+
+	    
+
+	        <div class="row flex-height">
+	            
+    <div class="col-sm-6">
+        <div class="column-color--default same-height">
+              
+
+
+
+
+
+    
+    
+
+    
+    
+    <p><span class="body"><span class="h3">To apply online, you’ll need:</span></span></p>
+<p style="margin-left: 40.0px;"><span class="body">✔ A Barclays current or savings account, mortgage or Barclaycard<br />
+ ✔ UK residency<br />
+ ✔ To be aged 18 or above</span></p>
+
+
+
+
+
+
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="column-color--default same-height">
+             
+
+
+
+
+
+    
+    
+
+    
+    
+    <p><span class="body"><span class="h3">You can use your loan for almost anything, apart from:</span></span></p>
+<ul>
+<li><span class="body">Business reasons</span></li>
+<li><span class="body">Investments, including buying stocks and shares</span></li>
+<li><span class="body">Timeshares</span></li>
+<li><span class="body">Purchasing property (home improvements are fine)</span></li>
+<li><span class="body">Gambling-related expenses</span></li>
+<li><span class="body">Repaying CCJs (county court judgments)</span></li>
+<li><span class="body">A purchase made by combining this loan with any others</span></li>
+</ul>
+
+
+
+
+
+
+        </div>
+    </div>
+
+	        </div>
+
+
+
+
+
+</article>
+         </div>
+      </li>
+   
+      
+      
+      
+      
+      
+        
+      
+      
+      
+         
+         
+      
+      
+
+      <li class="Accordion-item " data-accordion-expanded="false">
+        <h2 class="Accordion-title ">
+          <a href="#resumeanapplication" class="Accordion-titleLink" role="button">
+            
+            <span data-shortTitle="Resume application">Resume an application</span>
+          </a>
+        </h2>
+        
+        <div id="resumeanapplication" class="Accordion-content">
+          <article class="Accordion-body">
+
+
+
+
+
+    
+    
+
+    
+    
+    <p>If you’ve started an application already, it’s easy to pick up where you left off.</p>
+<h3 style="text-align: center;">How did you apply?</h3>
+
+
+
+
+
+
+
+
+	    
+
+	        <div class="row flex-height">
+	            
+    <div class="col-sm-6">
+        <div class="column-color--default same-height">
+              
+
+
+
+
+
+    
+    
+
+    
+    
+    <h3>In Online Banking – for Barclays current account holders</h3>
+<p>Log in to Online Banking here, and we’ll take you to your saved application form.</p>
+
+
+
+
+
+
+
+
+    
+    
+    
+        
+        <ul data-component-type="CTA" class="btn-holder">
+            <li>
+                
+    <a href="https://bank.barclays.co.uk/olb/balances/Home.action?d=lno" class='btn btn-primary' data-add-queryparams="false">Go to application</a>
+
+            </li>
+            
+        </ul>
+    
+
+
+
+
+
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="column-color--default same-height">
+             
+
+
+
+
+
+    
+    
+
+    
+    
+    <h3>Application form on the website – for other Barclays customers</h3>
+<p>We’ll have sent you a reference number by email. Enter it and we’ll send you to your application.</p>
+
+
+
+
+
+
+
+
+    
+    
+    
+        
+        <ul data-component-type="CTA" class="btn-holder">
+            <li>
+                
+    <a href="https://www.apply.barclays.co.uk/forms/instantlending/gettingstarted" class='btn btn-primary' data-add-queryparams="false">Enter reference number</a>
+
+            </li>
+            
+        </ul>
+    
+
+
+
+
+
+        </div>
+    </div>
+
+	        </div>
+
+
+
+
+
+</article>
+         </div>
+      </li>
+   
+      
+      
+      
+      
+      
+        
+      
+      
+      
+         
+         
+      
+      
+
+      <li class="Accordion-item " data-accordion-expanded="false">
+        <h2 class="Accordion-title ">
+          <a href="#ourlendingcommitmentsandwhatweaskofyou" class="Accordion-titleLink" role="button">
+            
+            <span data-shortTitle="Our lending commitments">Our lending commitments and what we ask of you</span>
+          </a>
+        </h2>
+        
+        <div id="ourlendingcommitmentsandwhatweaskofyou" class="Accordion-content">
+          <article class="Accordion-body">
+
+
+
+
+
+    
+    
+
+    
+    
+    <p>As a lender, we have a responsibility to act fairly and as part of this we have committed to follow the <a title="Opens in a new window" href="https://www.lendingstandardsboard.org.uk/the-slp/" target="_blank">Standards of Lending Practice</a>. This note sets out some of our key responsibilities and what we ask of you, to ensure that the relationship works well for both of us.</p>
+<ul>
+<li>We will lend responsibly and aim to provide a product that is affordable for you.</li>
+<li>We will provide you with information about our products and services and how they work, in a clear and understandable way, so that you can decide what’s best for you and your needs.</li>
+<li>We will endeavour to make sure our products and services offer, wherever possible, the flexibility to meet your needs.</li>
+<li>We will treat you fairly and reasonably at all times and make sure that you are provided with a high level of service.</li>
+<li>If you tell us about any inaccuracies, for example around the personal information we hold about you, we will act quickly to put it right.</li>
+<li>We will always aim to help you if we see, or you tell us, that you are having trouble financially. We will seek to understand your overall circumstances, try and identify options that you can afford and where appropriate, provide a reference to free debt advice.</li>
+</ul>
+<p><b>What we ask of you</b></p>
+<ul>
+<li>We ask you to think carefully about whether you can afford to repay the money you want to borrow and to be open in your dealings with us.</li>
+<li>Take care of any cards, PINs, online log-in details and other security information to help prevent fraud and help us to protect your accounts.</li>
+<li>Tell us as soon as possible if your card has been lost or stolen, or if you know or suspect someone is misusing your confidential information e.g. your PIN or online log-in details.</li>
+<li>Carefully check your account statements to make sure they are accurate. If anything isn’t right, please get in touch with us.</li>
+</ul>
+<p><b>Please let us know if</b></p>
+<ul>
+<li>Your contact details change, so we can keep our records up to date.</li>
+<li>Your circumstances change, particularly if what’s happened is likely to cause you difficulties in managing your account or financial problems.</li>
+<li>You think that you won’t be able to keep up with your repayments. The sooner you do this, the more likely it is we’ll be able to find a way to help you.</li>
+</ul>
+<p>We would also encourage you to refer to the terms and conditions associated with your current account, credit card or personal loan.<br />
+</p>
+
+
+
+
+
+</article>
+         </div>
+      </li>
+   </ul>
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    
+    
+
+
+    <section class="wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    
+
+
+
+
+
+    
+    
+
+    
+    <div class=" row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2">
+           
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+    
+
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3 wrapper-heading">
+            <h2>How much would you like to borrow?</h2>
+            
+    
+    
+
+    
+    
+    <p>The calculator results below are based on the representative APR for the amount you enter. Your actual rates and repayments may differ and will be based on your personal circumstances, the loan amount and term.</p>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    
+
+    <div class="loan-calculator" data-component-type="LoansCalculator" data-json-path="/content/dam/json-files/loans-calculator-files/loans-calculator-rates-pers-apr.json" data-amount-min="1000" data-amount-max="50000" data-amount-def="11000" data-amount-inc="100" data-term-min="24" data-term-max="60" data-term-def="60" data-term-inc="6">
+
+        <div class="row">
+            <div id="amtSlider" class="col-lg-12 c-slider" data-vars='{&quot;min&quot;:1000,&quot;max&quot;:50000,&quot;def&quot;:11000,&quot;inc&quot;:100,&quot;type&quot;:&quot;currency&quot;}'>
+                <span class="c-slider-header text-centre">Amount</span>
+                <div class="c-slider-controls">
+                    <div class="c-slider-controls-label">
+                        Amount
+                    </div>
+                    <div class="c-slider-wrapper u-float-left">
+                        <a class="track-me c-slider-minus u-float-left" data-track-once="true" data-track-type="button" href="#" title="Decrease amount – click or press the enter key" aria-label="Decrease amount"><span class="icon-minus icon-medium u-valign-middle"></span></a>
+                        <a class="track-me c-slider-plus u-float-right" data-track-once="true" data-track-type="button" href="#" title="Increase amount – click or press the enter key" aria-label="Increase amount"><span class="icon-plus icon-medium u-valign-middle"></span></a>
+                        <div class="c-slider-bar" aria-label="Slider amount"></div>
+                    </div>
+                    <div class="c-slider-input-wrapper u-float-right u-currency u-currency--pound">
+                        <label for="amtSliderVal" class="sr-only">Amount</label>
+                        <input class="c-slider-input c-slider-input--small track-me" inputmode="numeric" name="amtSliderVal" id="amtSliderVal" type="text"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div id="termSlider" class="col-lg-12 c-slider" data-vars='{&quot;min&quot;: 24,&quot;max&quot;: 60,&quot;def&quot;: 60,&quot;inc&quot;: 6,&quot;type&quot;: &quot;text&quot;,&quot;range&quot;:{&quot;min&quot;:24,&quot;40%&quot;:[36,12],&quot;max&quot;:60}}'>
+                <span class="c-slider-header text-centre">Term</span>
+                <div class="c-slider-controls">
+                    <div class="c-slider-controls-label">Term</div>
+                    <div class="c-slider-wrapper u-float-left">
+                        <a class="c-slider-minus u-float-left track-me" data-track-once="true" data-track-type="button" href="#" title="Decrease term – click or press the enter key" aria-label="Decrease term"><span class="icon-minus icon-medium u-valign-middle"></span></a>
+                        <a class="c-slider-plus u-float-right track-me" data-track-once="true" data-track-type="button" href="#" title="Increase term – click or press the enter key" aria-label="Increase term"><span class="icon-plus icon-medium u-valign-middle"></span></a>
+                        <div class="c-slider-bar" aria-label="Slider term"></div>
+                    </div>
+                    <div class="c-slider-input-wrapper u-float-right">
+                        <label for="termSliderValSel" class="sr-only">Term (Months)</label>
+                        <input class="c-slider-input c-slider-input--xsmall track-me" inputmode="numeric" pattern="[0-9]*" name="termSliderVal" id="termSliderVal" type="hidden"/>
+                        <div class="select-field">
+                            <select id="termSliderValSel" name="termSliderValSel" class="slider-term-input small"></select>
+                            <span></span>
+                        </div>
+                        <div class="c-slider-controls-label-term c-slider-controls-label-term--mob">Months</div>
+                        <div class="c-slider-controls-label-term c-slider-controls-label-term--desktop">mths <span class="mths-to-yrs">0</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row dynamic-labels calc-results-box-wrapper">
+            <div class="col-xs-12 col-sm-4 col-md-4 calc-results-box">
+                <div class="o-block c-block--calc-results u-text-centre">
+                    <span id="dynamic-label1">Monthly repayment</span>
+
+                    <p id="monthRepay" class="c-representative-value"></p>
+
+                    <p id="dynamic-label2" class="calc-info">The same every month</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 calc-results-box">
+                <div class="o-block c-block--calc-results u-text-centre">
+                    <span id="dynamic-label3">Total amount payable</span>
+
+                    <p id="totalPayable" class="c-representative-value"></p>
+
+                    <p id="dynamic-label4" class="calc-info">Loan required <span class="amtVal"></span></p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 calc-results-box">
+                <div class="o-block c-block--calc-results u-text-centre">
+                    <span id="dynamic-label5">APR</span>
+
+                    <p id="resRate" class="c-representative-value"></p>
+
+                    <p id="dynamic-label6" class="calc-info">Based on the details you entered</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row dynamic-labels">
+            <div class="col-lg-12">
+
+                <div class="c-representative-title">
+                    <h4 class="subheadingRep u-text-centre">Representative example</h4>
+                </div>
+                <div class="col-lg-12 c-representative-border u-text-centre">
+                    <p class="c-representative-inner">
+                        <span class="rep-res6 c-representative-value">&nbsp;</span>
+                        <span id="dynamic-label7" class="c-representative-bigrep">APR Representative</span><br class="c-res-break"/>
+                        <span id="dynamic-label8">based on a loan of</span>
+                        <span class="rep-res1 c-representative-value">&nbsp;</span><br/>
+                        <span id="dynamic-label9">repayable over</span>
+                        <span class="rep-res2 c-representative-value">&nbsp;</span>
+                        <span class="c-representative-bigrep" id="dynamic-label10">months</span><br class="c-res-break"/>
+                        <span id="dynamic-label11">at an interest rate of</span><br class="c-res-break"/>
+                        <span class="rep-res6 c-representative-value">&nbsp;</span>
+                        <span id="dynamic-label12" class="c-representative-bigrep">pa (fixed)</span>.<br/>
+                        <span id="dynamic-label13">Monthly repayment of</span>
+                        <span class="rep-res3 c-representative-value">&nbsp;</span>.<br class="c-res-break"/>
+                        <span id="dynamic-label14">Total amount payable</span>
+                        <span class="rep-res4 c-representative-value">&nbsp;</span>.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row dynamic-labels">
+            <div class="col-lg-12">
+                <p class="rep-note u-text-centre">
+                    <span id="dynamic-label15">Representative APR applies to loans of </span>
+                    <span class="rep-amt"></span>
+                    <span class="legal-dynamic"></span>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    
+    
+
+    
+    <div class=" row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2">
+           <p><a name="getaquote"></a></p>
+
+        </div>
+    </div>
+    
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    
+    
+
+
+    <section class="wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    
+
+
+
+
+
+    
+
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3 wrapper-heading">
+            
+            
+    
+    
+
+    
+    
+    <h2 style="text-align: center;"><a name="getaquote" id="getaquote"></a><span class="h2">How to apply</span></h2>
+<p>Find out the best way for you to apply for a loan.<br />
+If you have a current account with us, we could tell you your personal loan rate up front – and it won’t impact your credit score. Just make sure you read everything on this page before you apply.<br />
+</p>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    
+    <div class="promo-wrapper promo-wrapper-one">
+    
+        <article class="promo single">
+          
+            
+          
+              
+
+
+
+
+
+    
+    
+        
+            <div class="promo-media">
+                <picture>
+                    <source srcset="/content/dam/lifestyle-images/personal/loans/Woman_iPad_16_9.small.medium_quality.jpg" media="(min-width: 1024px)">
+                    <source srcset="/content/dam/lifestyle-images/personal/loans/Woman_iPad_16_9.xsmall.medium_quality.jpg" media="(min-width: 480px)">
+                    <source srcset="/content/dam/lifestyle-images/personal/loans/Woman_iPad_16_9.xxsmall.medium_quality.jpg">
+                    <img alt="" role="presentation" src="/content/dam/lifestyle-images/personal/loans/Woman_iPad_16_9.xxsmall.medium_quality.jpg"/>
+                    
+                </picture>
+            </div>
+            <div class="promo-content ">
+                <div class="promo-body">
+                    
+                    <h3>Have a current account with us?</h3>
+                    
+
+
+
+
+
+    
+    
+
+    
+    
+    <p>You can see if you’ve been pre-selected to apply for a loan – this means you can see how much you may be able to borrow, and your personal rate, in a few minutes*. All you need is:</p>
+<p><span class="list-icon list-tick"></span>A current account with us<br />
+<span class="list-icon list-tick"></span>Online Banking or Barclays Mobile Banking</p>
+
+
+
+
+
+
+                </div>
+                <div class="promo-footer">
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+    
+
+
+            <script type="text/javascript">
+                if (window.ContextHub && ContextHub.SegmentEngine) {
+                    ContextHubJQ(function() {
+                        ContextHub.SegmentEngine.PageInteraction.Teaser({
+                            locationId: '_content_barclaysuk_en_personal_loans_personal_jcr_content_page_par_apply_section_par_promo_wrapper_v2_181_1_row_column_one_reference_promo_tilev2_ctas_cta',
+                            variants: [{"path":"/content/campaigns/barclays/master/os-campaign/android/personal-cta0","name":"personal-cta0","title":"Android","campaignName":"os-campaign","campaignPath":"/content/campaigns/barclays/master/os-campaign","thumbnail":"/content/campaigns/barclays/master/os-campaign/android/personal-cta0.thumb.png","id":"os-campaign_personal-cta0","url":"/content/campaigns/barclays/master/os-campaign/android/personal-cta0/jcr:content/par.html","segments":["/etc/segmentation/contexthub/android"],"tags":[]},{"path":"/content/campaigns/barclays/master/os-campaign/ios/personal-cta0","name":"personal-cta0","title":"iOS","campaignName":"os-campaign","campaignPath":"/content/campaigns/barclays/master/os-campaign","thumbnail":"/content/campaigns/barclays/master/os-campaign/ios/personal-cta0.thumb.png","id":"os-campaign_personal-cta0","url":"/content/campaigns/barclays/master/os-campaign/ios/personal-cta0/jcr:content/par.html","segments":["/etc/segmentation/contexthub/ios"],"tags":[]},{"path":"/loans/personal/default","name":"default","title":"Default","campaignName":"","thumbnail":"/loans/personal.thumb.png","url":"/loans/personal/_jcr_content/page_par/apply/section_par/promo_wrapper_v2_181/1_row_column_one_reference/promo_tilev2/ctas/cta.default.html","tags":[]}],
+                            strategy: '',
+                            trackingURL: null
+                        });
+                    });
+                }
+            </script>
+        
+
+        <div id="_content_barclaysuk_en_personal_loans_personal_jcr_content_page_par_apply_section_par_promo_wrapper_v2_181_1_row_column_one_reference_promo_tilev2_ctas_cta" class="campaign ">
+        <div class="default cta parbase">
+    
+    
+    
+        
+        <ul data-component-type="CTA" class="btn-holder">
+            <li>
+                
+    <a href="https://bank.barclays.co.uk/olb/balances/Home.action?d=lno" class='btn btn-primary' data-add-queryparams="false" target="_blank">Check now</a>
+
+            </li>
+            
+        </ul>
+    
+</div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+                    
+                </div>
+            </div>
+        
+    
+
+
+
+
+
+          
+          
+        </article>
+    </div>
+
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+
+
+    
+    
+
+    
+    <div class=" row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2">
+           <p style="text-align: center;"><b>Don’t have a Barclays current account?</b></p>
+<p style="text-align: center;">If you have another type of Barclays account, such as a Barclaycard, you could still get a <a href="https://www.apply.barclays.co.uk/forms/lending/saleslending/AppContainer.do">personalised price quote</a>.</p>
+
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+    
+    
+
+    
+    <div class=" row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2">
+           <p style="text-align: center;">* You need to be registered for Online Banking or Barclays Mobile Banking. Not everyone is pre-selected – if you aren’t, you won’t be able to apply online or in mobile banking. Please get in touch to discuss your options.<br />
+</p>
+
+        </div>
+    </div>
+    
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    
+    
+
+
+    <section class="wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    
+
+
+
+
+
+    
+
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3 wrapper-heading">
+            <h2>Lending and guidance</h2>
+            
+    
+    
+
+    
+    
+    <p>We have lots of additional information, loan options and tools to help you.<br />
+All borrowing is subject to status.</p>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="js-multitab mtc-bgcolor--default" data-component-type="MultiTab">
+    
+        <div class="tabs-container hidden-xs">
+            <span class="theres-more left"></span>
+            <div class="tabs-wrapper">
+                <ul class="tabs">
+                    
+                        <li data-name="online">
+                            <a href="#online">
+                                <span class="long">Borrowing to suit you</span>
+                                <span class="short">Your borrowing</span>
+                            </a>
+                        </li>
+                    
+                        <li data-name="mobilebanking">
+                            <a href="#mobilebanking">
+                                <span class="long">Other ways to borrow </span>
+                                <span class="short">Ways to borrow </span>
+                            </a>
+                        </li>
+                    
+                        <li data-name="pingit">
+                            <a href="#pingit">
+                                <span class="long">Need some more help?</span>
+                                <span class="short">More help?</span>
+                            </a>
+                        </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        <div class="tabs-select-container visible-xs">
+            <legend class="label">Select</legend>
+            <label class="access" aria-hidden="true">Select</label>
+            <div class="select-field">
+                <select class="select" name="tab-select">
+                    
+                        <option value="online">Borrowing to suit you</option>
+                    
+                        <option value="mobilebanking">Other ways to borrow </option>
+                    
+                        <option value="pingit">Need some more help?</option>
+                    
+                </select><span></span>
+            </div>
+        </div>
+    
+
+    
+
+
+    <div class="content">
+        <ul class="unstyled cta-list">
+            
+                
+                
+                    
+                
+
+                
+
+                <li id="online" data-name="online" class="clearfix">
+
+                    <span class="component-label-wrapper multi-tab-section">
+                        <span class="component-floating-label ">Borrowing to suit you</span>
+                    </span>
+                    
+                    
+                    <div style="clear:both">
+                        
+
+
+
+
+
+
+    
+    <div class="promo-wrapper promo-wrapper-four">
+    
+        <article class="promo">
+
+            
+            
+            
+
+
+    
+    
+
+    <div class="promo-media">
+
+        <picture>
+            <source srcset="/content/dam/lifestyle-images/personal/loans/loans_car_16_9.small.medium_quality.jpg" media="(min-width: 1024px)">
+            <source srcset="/content/dam/lifestyle-images/personal/loans/loans_car_16_9.xsmall.medium_quality.jpg" media="(min-width: 480px)">
+            <source srcset="/content/dam/lifestyle-images/personal/loans/loans_car_16_9.xxsmall.medium_quality.jpg">
+            <img src="/content/dam/lifestyle-images/personal/loans/loans_car_16_9.xxsmall.medium_quality.jpg"/>
+        </picture>
+
+        
+    </div>
+    <div class="promo-content">
+        <div class="promo-body">
+             
+            <h3 class="promo-title">Car loans</h3>
+            <p>Driving a better deal with a loan</p>
+            <p>When it comes to buying your next car, knowing you’ve got the money in your back pocket can help you get a better deal.</p>
+<p><b>Loans are subject to status. Early settlement fees apply.</b></p>
+
+        </div>
+        <div class="promo-footer">
+            <a href="/loans/car-loans/" class="btn btn-primary" title="Personal loan for your car">Personal loan for your car</a>
+        </div>
+    </div>
+
+
+    
+
+    
+
+        </article>
+        <article class="promo">
+
+            
+            
+            
+
+
+    
+    
+
+    <div class="promo-media">
+
+        <picture>
+            <source srcset="/content/dam/lifestyle-images/personal/loans/consolidation1-16_9.small.medium_quality.jpg" media="(min-width: 1024px)">
+            <source srcset="/content/dam/lifestyle-images/personal/loans/consolidation1-16_9.xsmall.medium_quality.jpg" media="(min-width: 480px)">
+            <source srcset="/content/dam/lifestyle-images/personal/loans/consolidation1-16_9.xxsmall.medium_quality.jpg">
+            <img src="/content/dam/lifestyle-images/personal/loans/consolidation1-16_9.xxsmall.medium_quality.jpg"/>
+        </picture>
+
+        
+    </div>
+    <div class="promo-content">
+        <div class="promo-body">
+             
+            <h3 class="promo-title">How to consolidate debt</h3>
+            <p>All your debts in one manageable loan</p>
+            <p>If you’ve borrowed from different lenders, a debt consolidation loan could help you take control of your finances and keep track of your money.</p>
+<p><b>Loans are subject to status. Early settlement fees apply.</b></p>
+
+        </div>
+        <div class="promo-footer">
+            <a href="/loans/debt-consolidation-loans/" class="btn btn-primary" title="Personal loan for debt">Personal loan for debt</a>
+        </div>
+    </div>
+
+
+    
+
+    
+
+        </article>
+        <article class="promo">
+
+            
+            
+            
+
+
+    
+    
+
+    <div class="promo-media">
+
+        <picture>
+            <source srcset="/content/dam/lifestyle-images/personal/loans/home_improvement_loan1-16_9.small.medium_quality.jpg" media="(min-width: 1024px)">
+            <source srcset="/content/dam/lifestyle-images/personal/loans/home_improvement_loan1-16_9.xsmall.medium_quality.jpg" media="(min-width: 480px)">
+            <source srcset="/content/dam/lifestyle-images/personal/loans/home_improvement_loan1-16_9.xxsmall.medium_quality.jpg">
+            <img src="/content/dam/lifestyle-images/personal/loans/home_improvement_loan1-16_9.xxsmall.medium_quality.jpg"/>
+        </picture>
+
+        
+    </div>
+    <div class="promo-content">
+        <div class="promo-body">
+             
+            <h3 class="promo-title">Home improvement loan</h3>
+            <p>Spruce up your property</p>
+            <p>Whether you’d like a new kitchen, or want to give your lounge a new lease of life, this loan is designed to help you get more from your property.</p>
+<p><b>Loans are subject to status. Early settlement fees apply.</b></p>
+
+        </div>
+        <div class="promo-footer">
+            <a href="/loans/home-improvement-loan/" class="btn btn-primary" title="A loan for your home">A loan for your home</a>
+        </div>
+    </div>
+
+
+    
+
+    
+
+        </article>
+        <article class="promo">
+
+            
+            
+            
+
+
+    
+    
+
+    <div class="promo-media">
+
+        <picture>
+            <source srcset="/content/dam/lifestyle-images/personal/loans/top_up_loan1-16_9.small.medium_quality.jpg" media="(min-width: 1024px)">
+            <source srcset="/content/dam/lifestyle-images/personal/loans/top_up_loan1-16_9.xsmall.medium_quality.jpg" media="(min-width: 480px)">
+            <source srcset="/content/dam/lifestyle-images/personal/loans/top_up_loan1-16_9.xxsmall.medium_quality.jpg">
+            <img src="/content/dam/lifestyle-images/personal/loans/top_up_loan1-16_9.xxsmall.medium_quality.jpg"/>
+        </picture>
+
+        
+    </div>
+    <div class="promo-content">
+        <div class="promo-body">
+             
+            <h3 class="promo-title">Top up an existing loan</h3>
+            <p>Need a little extra?</p>
+            <p>If you already have a Barclayloan but could do with a little more money, you may be able to top it up or get an additional loan.</p>
+<p><b>Loans are subject to status. Early settlement fees apply.</b></p>
+
+        </div>
+        <div class="promo-footer">
+            <a href="/loans/top-up-loan/" class="btn btn-primary" title="Top up your borrowing">Top up your borrowing</a>
+        </div>
+    </div>
+
+
+    
+
+    
+
+        </article>
+    </div>
+
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+                    </div>
+
+                </li>
+
+            
+                
+                
+                    
+                
+
+                
+
+                <li id="mobilebanking" data-name="mobilebanking" class="clearfix">
+
+                    <span class="component-label-wrapper multi-tab-section">
+                        <span class="component-floating-label ">Other ways to borrow </span>
+                    </span>
+                    
+                    
+                    <div style="clear:both">
+                        
+
+
+
+
+
+
+    
+    <div class="promo-wrapper promo-wrapper-three">
+        
+        <article class="promo">
+            
+            
+            
+
+
+    
+
+    
+    
+        
+        <div class="promo-media">
+            <picture>
+                <source srcset="/content/dam/lifestyle-images/premier/barclayloan2-16_9.small.medium_quality.jpg" media="(min-width: 1024px)">
+                <source srcset="/content/dam/lifestyle-images/premier/barclayloan2-16_9.xsmall.medium_quality.jpg" media="(min-width: 480px)">
+                <source srcset="/content/dam/lifestyle-images/premier/barclayloan2-16_9.xxsmall.medium_quality.jpg">
+                <img src="/content/dam/lifestyle-images/premier/barclayloan2-16_9.xxsmall.medium_quality.jpg"/>
+            </picture>
+
+            
+        </div>
+        <div class="promo-content ">
+            <div class="promo-body">
+                
+                <h3 class="promo-title">Premier Barclayloan</h3>
+                <p>Exclusively available to Premier customers. See what your loan could look like with a personalised quote. </p>
+
+            </div>
+            <div class="promo-footer">
+                <a href="/premier-banking/barclayloan/" class="btn btn-primary" data-add-queryparams="false" title="Get a Premier Barclayloan">Get a Premier Barclayloan</a>
+                
+            </div>
+        </div>
+    
+
+
+    
+
+        </article>
+        <article class="promo">
+            
+            
+            
+
+
+    
+
+    
+    
+        
+        <div class="promo-media">
+            <picture>
+                <source srcset="/content/dam/lifestyle-images/personal/credit-cards/ccard_16_9.small.medium_quality.jpg" media="(min-width: 1024px)">
+                <source srcset="/content/dam/lifestyle-images/personal/credit-cards/ccard_16_9.xsmall.medium_quality.jpg" media="(min-width: 480px)">
+                <source srcset="/content/dam/lifestyle-images/personal/credit-cards/ccard_16_9.xxsmall.medium_quality.jpg">
+                <img src="/content/dam/lifestyle-images/personal/credit-cards/ccard_16_9.xxsmall.medium_quality.jpg"/>
+            </picture>
+
+            
+        </div>
+        <div class="promo-content ">
+            <div class="promo-body">
+                
+                <h3 class="promo-title">Barclaycard </h3>
+                <p>Choose from our range of credit cards, which include cards for everyday purchases and balance transfers.<br />
+</p>
+
+            </div>
+            <div class="promo-footer">
+                <a href="/credit-cards/" class="btn btn-primary" data-add-queryparams="false" title="Explore credit cards">Explore credit cards</a>
+                
+            </div>
+        </div>
+    
+
+
+    
+
+        </article>
+        <article class="promo">
+            
+            
+            
+
+
+    
+
+    
+    
+        
+        <div class="promo-media">
+            <picture>
+                <source srcset="/content/dam/lifestyle-images/personal/current-accounts/ca_odraft_16_9.small.medium_quality.jpg" media="(min-width: 1024px)">
+                <source srcset="/content/dam/lifestyle-images/personal/current-accounts/ca_odraft_16_9.xsmall.medium_quality.jpg" media="(min-width: 480px)">
+                <source srcset="/content/dam/lifestyle-images/personal/current-accounts/ca_odraft_16_9.xxsmall.medium_quality.jpg">
+                <img src="/content/dam/lifestyle-images/personal/current-accounts/ca_odraft_16_9.xxsmall.medium_quality.jpg"/>
+            </picture>
+
+            
+        </div>
+        <div class="promo-content ">
+            <div class="promo-body">
+                
+                <h3 class="promo-title">Overdrafts</h3>
+                <p>An overdraft may help you manage your money – and we make it easy for you to work out how much it could cost.</p>
+
+            </div>
+            <div class="promo-footer">
+                <a href="/current-accounts/bank-account/overdrafts/" class="btn btn-primary" data-add-queryparams="false" title="Overdraft options">Overdraft options</a>
+                
+            </div>
+        </div>
+    
+
+
+    
+
+        </article>
+    </div>
+
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+                    </div>
+
+                </li>
+
+            
+                
+                
+                    
+                
+
+                
+
+                <li id="pingit" data-name="pingit" class="clearfix">
+
+                    <span class="component-label-wrapper multi-tab-section">
+                        <span class="component-floating-label ">Need some more help?</span>
+                    </span>
+                    
+                    
+                    <div style="clear:both">
+                        
+
+
+
+
+
+
+    
+    <div class="promo-wrapper promo-wrapper-three">
+        
+        <article class="promo">
+            
+            
+            
+
+
+    
+
+    
+    
+        
+        <div class="promo-media">
+            <picture>
+                <source srcset="/content/dam/lifestyle-images/personal/loans/loans_cred_rating_16_9.small.medium_quality.jpg" media="(min-width: 1024px)">
+                <source srcset="/content/dam/lifestyle-images/personal/loans/loans_cred_rating_16_9.xsmall.medium_quality.jpg" media="(min-width: 480px)">
+                <source srcset="/content/dam/lifestyle-images/personal/loans/loans_cred_rating_16_9.xxsmall.medium_quality.jpg">
+                <img src="/content/dam/lifestyle-images/personal/loans/loans_cred_rating_16_9.xxsmall.medium_quality.jpg"/>
+            </picture>
+
+            
+        </div>
+        <div class="promo-content ">
+            <div class="promo-body">
+                
+                <h3 class="promo-title">Get a better credit rating</h3>
+                <p>Find out how to improve your credit rating – and make it easier to borrow extra money when you need to.</p>
+
+            </div>
+            <div class="promo-footer">
+                <a href="/credit-cards/what-is-a-credit-rating/" class="btn btn-primary" data-add-queryparams="false" title="Help with credit ratings">Help with credit ratings</a>
+                
+            </div>
+        </div>
+    
+
+
+    
+
+        </article>
+        <article class="promo">
+            
+            
+            
+
+
+    
+    
+
+    <div class="promo-media">
+
+        <picture>
+            <source srcset="/content/dam/lifestyle-images/personal/loans/ways_to_borrow1-16_9.small.medium_quality.jpg" media="(min-width: 1024px)">
+            <source srcset="/content/dam/lifestyle-images/personal/loans/ways_to_borrow1-16_9.xsmall.medium_quality.jpg" media="(min-width: 480px)">
+            <source srcset="/content/dam/lifestyle-images/personal/loans/ways_to_borrow1-16_9.xxsmall.medium_quality.jpg">
+            <img src="/content/dam/lifestyle-images/personal/loans/ways_to_borrow1-16_9.xxsmall.medium_quality.jpg"/>
+        </picture>
+
+        
+    </div>
+    <div class="promo-content">
+        <div class="promo-body">
+             
+            <h3 class="promo-title">Find the best loan for you</h3>
+            <p>Learn about secured and unsecured loans</p>
+            <p>This guide to borrowing covers some of the key factors you should consider when choosing the best loan for your needs.</p>
+
+        </div>
+        <div class="promo-footer">
+            <a href="/loans/find-the-best-loans-for-you/" class="btn btn-primary" title="Learn about loans">Learn about loans</a>
+        </div>
+    </div>
+
+
+    
+
+    
+
+        </article>
+        <article class="promo">
+            
+            
+            
+
+
+    
+    
+
+    <div class="promo-media">
+
+        <picture>
+            <source srcset="/content/dam/lifestyle-images/personal/loans/loans1-16_9.small.medium_quality.jpg" media="(min-width: 1024px)">
+            <source srcset="/content/dam/lifestyle-images/personal/loans/loans1-16_9.xsmall.medium_quality.jpg" media="(min-width: 480px)">
+            <source srcset="/content/dam/lifestyle-images/personal/loans/loans1-16_9.xxsmall.medium_quality.jpg">
+            <img src="/content/dam/lifestyle-images/personal/loans/loans1-16_9.xxsmall.medium_quality.jpg"/>
+        </picture>
+
+        
+    </div>
+    <div class="promo-content">
+        <div class="promo-body">
+             
+            <h3 class="promo-title">Understanding loan rates</h3>
+            <p>What&#39;s an APR?</p>
+            <p>We explain what APR means – and the difference between representative and personal APR.<br />
+</p>
+
+        </div>
+        <div class="promo-footer">
+            <a href="/loans/what-does-apr-mean/" class="btn btn-primary" title="APR explained">APR explained</a>
+        </div>
+    </div>
+
+
+    
+
+    
+
+        </article>
+    </div>
+
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+                    </div>
+
+                </li>
+
+            
+        </ul>
+    </div>
+
+</div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    
+    
+
+
+    <section class="wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    
+
+
+
+
+
+    
+
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3 wrapper-heading">
+            <h2>Talk to us about loans</h2>
+            
+    
+    
+
+    
+    
+    
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    
+    <div class="promo-wrapper promo-wrapper-two">
+    
+        <article class="promo">
+            
+            
+            
+
+
+    
+
+    
+    
+        
+        <div class="promo-media">
+            <picture>
+                <source srcset="/content/dam/lifestyle-images/premier/prem_mort_call_16_9.small.medium_quality.jpg" media="(min-width: 1024px)">
+                <source srcset="/content/dam/lifestyle-images/premier/prem_mort_call_16_9.xsmall.medium_quality.jpg" media="(min-width: 480px)">
+                <source srcset="/content/dam/lifestyle-images/premier/prem_mort_call_16_9.xxsmall.medium_quality.jpg">
+                <img src="/content/dam/lifestyle-images/premier/prem_mort_call_16_9.xxsmall.medium_quality.jpg"/>
+            </picture>
+
+            
+        </div>
+        <div class="promo-content ">
+            <div class="promo-body">
+                
+                <h3 class="promo-title">Over the phone</h3>
+                <p>If you have any questions, you can speak to a lending specialist on 0800 716 5982 <sup>4</sup><span style="">.</span></p>
+
+            </div>
+            <div class="promo-footer">
+                
+                
+            </div>
+        </div>
+    
+
+
+    
+
+        </article>
+        <article class="promo">
+            
+            
+            
+
+
+    
+
+    
+    
+        
+        <div class="promo-media">
+            <picture>
+                <source srcset="/content/dam/lifestyle-images/premier/prem_mort_branch_16_9.small.medium_quality.jpg" media="(min-width: 1024px)">
+                <source srcset="/content/dam/lifestyle-images/premier/prem_mort_branch_16_9.xsmall.medium_quality.jpg" media="(min-width: 480px)">
+                <source srcset="/content/dam/lifestyle-images/premier/prem_mort_branch_16_9.xxsmall.medium_quality.jpg">
+                <img src="/content/dam/lifestyle-images/premier/prem_mort_branch_16_9.xxsmall.medium_quality.jpg"/>
+            </picture>
+
+            
+        </div>
+        <div class="promo-content ">
+            <div class="promo-body">
+                
+                <h3 class="promo-title">Visit us in branch</h3>
+                <p>We’re on hand if you’d like to discuss your options in person. You can find your nearest branch and opening times here.</p>
+
+            </div>
+            <div class="promo-footer">
+                <a href="http://ask.barclays.co.uk/branchfinder" class="btn btn-primary" data-add-queryparams="false" title="Branch finder">Branch finder</a>
+                
+            </div>
+        </div>
+    
+
+
+    
+
+        </article>
+    </div>
+
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+        <section class="wrapper hidden" id="legal-statements">
+            <div class="container-fluid">
+                
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3 wrapper-heading">
+                        <h2>Important information</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <ol><li class="global-legal-item"> <p>Not everyone can apply for a Barclayloan, or view their personalised price quote or provisional loan limit online or in Barclays Mobile Banking – this is because certain restrictions apply. Please contact us to discuss your options.</p>
+</li><li class="global-legal-item"> <p>If you apply online and your application is approved, you’ll need to print or download your agreement. If you apply in Barclays Mobile Banking and it’s approved, you’ll need to have it emailed to you. As long as you do one of these and sign your agreement online between 7am and 10.30pm, you’ll usually get your money straight away (within a few minutes). If you don’t bank with one of the main UK high street banks, sometimes it can take up to a couple of hours. If you sign after 10.30pm, you’ll usually get your money before 9am the next day.</p>
+</li><li class="global-legal-item"> <p>The rate you&#39;re offered may differ from the representative APR shown – and will be based on your personal circumstances, the loan amount and the repayment term. The Barclayloan advertised here is available over terms of between 2 to 5 years, with a maximum APR of 29.9%.</p>
+</li><li class="global-legal-item"> <p>Lines are open Monday to Sunday 8am to 9pm, and bank holidays 8am to 6pm. To maintain a quality service, we may monitor or record phone calls. <a href="/important-information/call-charges/" target="_self">Call charges</a>.<br>
+</p>
+</li></ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+
+
+
+
+
+
+
+<div class="footer iparsys parsys"><div class="section"><div class="new"></div>
+</div><div class="iparys_inherited"><div class="footer iparsys parsys"><div class="reference parbase section">
+
+	
+	
+	
+	
+	
+	
+		
+			
+				<div>
+
+<footer class="footer" id="globalfooter">
+
+    <!-- Placeholder <a> tag to ensure footer receives focus with skip link -->
+    <div class="skipwrapper"><a id="skip-main" name="skip-main">-</a></div>
+
+    <div class="footer-links" role="navigation" aria-label="Footer navigation">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-6 col-md-3 col-lg-2 col-lg-offset-2">
+                    
+
+    
+
+
+    
+    
+    <div class="links" data-component-type="Footer">
+        <h2></h2>
+        <ul data-component-type="Link">
+            <li><a href="/contact-us/" target="_self" title="Contact us">Contact us</a></li>
+        
+            <li><a href="/security/" target="_self" title="Protect yourself from fraud">Protect yourself from fraud</a></li>
+        
+            <li><a href="/security/card-fraud/" target="_self" title="Lost or stolen card">Lost or stolen card</a></li>
+        
+            <li><a href="/help/" target="_self" title="Help">Help</a></li>
+        
+            <li><a href="/branchfinder/" target="_self" title="Branch Finder">Branch Finder</a></li>
+        </ul>
+    </div>
+
+
+
+
+
+                    </div>
+                <div class="col-xs-6 col-md-3 col-lg-2">
+                    
+
+    
+
+
+    
+    
+    <div class="links" data-component-type="Footer">
+        <h2></h2>
+        <ul data-component-type="Link">
+            <li><a href="/important-information/ppi/" target="_self" title="PPI information">PPI information</a></li>
+        
+            <li><a href="/important-information/arrears-assistance-review/" target="_self" title="Arrears assistance review">Arrears assistance review</a></li>
+        
+            <li><a href="/current-accounts/bank-account/overdrafts/" target="_self" title="Barclays Overdraft">Barclays Overdraft</a></li>
+        
+            <li><a href="https://status.uk.barclays/" target="_self" title="Service status">Service status</a></li>
+        
+            <li><a href="/important-information/bank-of-england-base-rate-change/" target="_self" title="Bank of England base rate">Bank of England base rate</a></li>
+        </ul>
+    </div>
+
+
+
+
+
+                    </div>
+                <div class="col-xs-6 col-md-3 col-lg-2">
+                    
+
+    
+
+
+    
+    
+    <div class="links" data-component-type="Footer">
+        <h2></h2>
+        <ul data-component-type="Link">
+            <li><a href="/security/ISO27001certification/" target="_self" title="Security certification">Security certification</a></li>
+        
+            <li><a href="/important-information/" target="_self" title="Legal information">Legal information</a></li>
+        
+            <li><a href="/accessibility/" target="_self" title="Accessibility">Accessibility</a></li>
+        
+            <li><a href="/important-information/cookies-policy/" target="_self" title="Cookies">Cookies</a></li>
+        
+            <li><a href="/important-information/privacy-policy/" target="_self" title="Privacy policy">Privacy policy</a></li>
+        </ul>
+    </div>
+
+
+
+
+
+                </div>
+                <div class="col-xs-6 col-md-3 col-lg-2">
+                    
+
+    
+
+
+    
+    
+    <div class="links" data-component-type="Footer">
+        <h2></h2>
+        <ul data-component-type="Link">
+            <li><a href="http://jobs.barclays.co.uk/" target="_self" title="Careers">Careers</a></li>
+        
+            <li><a href="https://www.home.barclays/" target="_self" title="home.barclays">home.barclays</a></li>
+        
+            <li><a href="/mortgages/mortgage-calculator/" target="_self" title="Mortgage calculators">Mortgage calculators</a></li>
+        
+            <li><a href="/loans/" target="_self" title="Compare our loans">Compare our loans</a></li>
+        
+            <li><a href="/current-accounts/" target="_self" title="Current accounts">Current accounts</a></li>
+        </ul>
+    </div>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-legal" role="contentinfo">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 legal">
+                    
+                    
+                    <div class="text section">
+    
+    
+
+    
+    
+    <p style="text-align: center;">Barclays Bank UK PLC. Authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority (Financial Services Register number: 759676). Barclays Bank UK PLC adheres to The Standards of Lending Practice which is monitored and enforced by The Lending Standards Board. Further details can be found at <a title="Opens in a new window" href="http://www.lendingstandardsboard.org.uk" target="_blank">www.lendingstandardsboard.org.uk</a>.</p>
+<p style="text-align: center;">Barclays Insurance Services Company Limited is authorised and regulated by the Financial Conduct Authority (Financial Services Register number: 312078).</p>
+<p style="text-align: center;">Barclays Smart Investor is a trading name of Barclays Investment Solutions Limited. Barclays Investment Solutions Limited is authorised and regulated by the Financial Conduct Authority. (Financial Services Register number: 155595). Barclays Investment Solutions Limited is a member of the London Stock Exchange &amp; NEX.</p>
+<p style="text-align: center;">Barclays Bank PLC. Authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority (Financial Services Register number: 122702).</p>
+<p style="text-align: center;">Barclays Bank UK PLC. Registered no. 9740322. Barclays Insurance Services Company Limited. Registered no. 973765. Barclays Investment Solutions Limited. Registered no. 2752982. Barclays Bank PLC. Registered no. 1026167. All registered in England. Registered office for all: 1 Churchill Place, London E14 5HP.</p>
+
+</div>
+
+
+                </div>
+                <div class="col-xs-12 col-md-8 col-md-offset-2 sponsors">
+
+
+                    
+
+                    <div class="ftr-img-contnr text-centre"><div class="image parbase section">
+   
+   
+    
+    
+    
+
+    <div data-component-type="Image">
+        
+        
+            <picture>
+                <!--[if IE 9]>
+                <video style="display: none;"><![endif]-->
+                <source srcset="/content/dam/lifestyle-images/personal/miscellaneous/FSCS_logo.large.medium_quality.jpg" media="(min-width: 1440px)">
+                <source srcset="/content/dam/lifestyle-images/personal/miscellaneous/FSCS_logo.medium.medium_quality.jpg" media="(min-width: 1024px)">
+                <source srcset="/content/dam/lifestyle-images/personal/miscellaneous/FSCS_logo.small.medium_quality.jpg" media="(min-width: 768px)">
+                <source srcset="/content/dam/lifestyle-images/personal/miscellaneous/FSCS_logo.xsmall.medium_quality.jpg" media="(min-width: 480px)">
+                <source srcset="/content/dam/lifestyle-images/personal/miscellaneous/FSCS_logo.xxsmall.medium_quality.jpg">
+                <!--[if IE 9]></video><![endif]-->
+                <img class="adaptive-image " src="/content/dam/lifestyle-images/personal/miscellaneous/FSCS_logo.full.high_quality.jpg" alt="fscs protected">
+            </picture>
+            
+        
+    </div>
+
+</div>
+<div class="image parbase section">
+   
+   
+    
+    
+    
+
+    <div data-component-type="Image">
+        
+        
+            <picture>
+                <!--[if IE 9]>
+                <video style="display: none;"><![endif]-->
+                <source srcset="/content/dam/lifestyle-images/personal/miscellaneous/BSI_kitemark_logo.large.medium_quality.jpg" media="(min-width: 1440px)">
+                <source srcset="/content/dam/lifestyle-images/personal/miscellaneous/BSI_kitemark_logo.medium.medium_quality.jpg" media="(min-width: 1024px)">
+                <source srcset="/content/dam/lifestyle-images/personal/miscellaneous/BSI_kitemark_logo.small.medium_quality.jpg" media="(min-width: 768px)">
+                <source srcset="/content/dam/lifestyle-images/personal/miscellaneous/BSI_kitemark_logo.xsmall.medium_quality.jpg" media="(min-width: 480px)">
+                <source srcset="/content/dam/lifestyle-images/personal/miscellaneous/BSI_kitemark_logo.xxsmall.medium_quality.jpg">
+                <!--[if IE 9]></video><![endif]-->
+                <img class="adaptive-image " src="/content/dam/lifestyle-images/personal/miscellaneous/BSI_kitemark_logo.full.high_quality.jpg" alt="bsi. Secure Digital Transactions. KITEMARK. Certificate number KM 616800">
+            </picture>
+            
+        
+    </div>
+
+</div>
+<div class="image parbase section">
+   
+   
+    
+    
+    
+
+    <div data-component-type="Image">
+        
+        
+            <picture>
+                <!--[if IE 9]>
+                <video style="display: none;"><![endif]-->
+                <source srcset="/content/dam/lifestyle-images/personal/miscellaneous/CE_logo.large.medium_quality.jpg" media="(min-width: 1440px)">
+                <source srcset="/content/dam/lifestyle-images/personal/miscellaneous/CE_logo.medium.medium_quality.jpg" media="(min-width: 1024px)">
+                <source srcset="/content/dam/lifestyle-images/personal/miscellaneous/CE_logo.small.medium_quality.jpg" media="(min-width: 768px)">
+                <source srcset="/content/dam/lifestyle-images/personal/miscellaneous/CE_logo.xsmall.medium_quality.jpg" media="(min-width: 480px)">
+                <source srcset="/content/dam/lifestyle-images/personal/miscellaneous/CE_logo.xxsmall.medium_quality.jpg">
+                <!--[if IE 9]></video><![endif]-->
+                <img class="adaptive-image " src="/content/dam/lifestyle-images/personal/miscellaneous/CE_logo.full.high_quality.jpg" alt="Cyber essentials">
+            </picture>
+            
+        
+    </div>
+
+</div>
+
+</div>
+
+                    
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+</footer></div>
+			
+		
+		
+	
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="section"><div class="new"></div>
+</div><div class="iparys_inherited"><div class="custom_tags_footer_sitewide iparsys parsys"><div class="custom_tag parbase section">
+
+
+
+
+
+
+   	
+	
+		
+		
+	      <script type="text/javascript">_satellite.pageBottom();</script>
+	   	
+		
+	   	
+	
+</div>
+<div class="custom_tag parbase section">
+
+
+
+
+
+
+   	
+	
+		
+		
+		
+	   	
+	   		
+	    	<script type="text/javascript">
+	         window.barclays && barclays.privacy && barclays.privacy.gateway && barclays.privacy.gateway({
+	             'cat' : 'cat4',
+	             'code' : '%3Cscript%20src%3D%22%2Fcontent%2Fdam%2Fjavascript%2Fforesee.js%22%3E%20%3C%2Fscript%3E',
+	             'replace' : ''
+	         });
+	      	</script>
+	   	
+	
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+   <script type="text/javascript">
+      var bcpublic = bcpublic || {};
+      bcpublic.helpandsupport = bcpublic.helpandsupport || {};
+      bcpublic.helpandsupport.rootConfig = {
+ "cookieWebchat": [{
+  "segmentName": "1",
+  "evaluation": "1"
+  }],
+ "cookieNav": [
+  {
+  "segmentName": "Personal",
+  "evaluation": "prevPage=Personal"
+  },
+  {
+  "segmentName": "Premier",
+  "evaluation": "prevPage=Premier"
+  },
+  {
+  "segmentName": "Business",
+  "evaluation": "prevPage=Business"
+  },
+  {
+  "segmentName": "Corporate",
+  "evaluation": "corporate"
+  },
+  {
+  "segmentName": "Wealth",
+  "evaluation": "prevPage=Wealth"
+  }
+ ],
+ "cookieSegment": [
+  {
+  "segmentName": "Personal",
+  "evaluation": "segment=Personal"
+  },
+  {
+  "segmentName": "Premier",
+  "evaluation": "segment=Premier"
+  },
+  {
+  "segmentName": "Business",
+  "evaluation": "segment=Business"
+  },
+  {
+  "segmentName": "Wealth",
+  "evaluation": "segment=Wealth"
+  }
+ ],
+ "cookieSecure": [{
+  "segmentName": "1",
+  "evaluation": "1"
+  }],
+ "cookieColleague": []
+ };
+
+   </script>
+
+
+
+
+    <script src="/etc/designs/componentlibrary/clientlib/js/libs/jquery.nouislider.min.js"></script>
+
+    <script src="/etc/designs/componentlibrary/clientlib/js/libs/slider.js"></script>
+
+
+
+    
+<script type="text/javascript" src="/etc/designs/bdl1.7.4/clientlib.js"></script>
+<script type="text/javascript" src="/etc/designs/componentlibrary/clientlib.js"></script>
+
+
+
+
+
+    
+<script type="text/javascript" src="/etc/designs/bdl-next/clientlib.js"></script>
+
+
+
+
+
+    
+<script type="text/javascript" src="/etc/designs/componentlibrary/commonlibs.js"></script>
+
+
+
+
+
+    <script id="code-cookies-js" data-account="barukprod" data-cookiedomainperiod="3" data-channel="UKRBB">
+        barclays.privacy.gateway({
+            'cat': 'cat2',
+            'code': '%3Cscript%20src%3D%22%2Fetc%2Fdesigns%2Fcomponentlibrary%2Fsitecatalyst%2Fs_codecookiesv2.js%22%3E%3C%2Fscript%3E',
+            'replace': ''
+        });
+    </script>
+
+
+    <script>
+        var items = 'Personal,Loans,Personal'.split(',');
+        var pageDepth = items.length;
+        var querystring = window.location.search;
+
+        if (querystring.charAt(0) === '?')
+            querystring = querystring.substr(1);
+
+        if (typeof s !== 'undefined') {
+            // Branch finder changes
+            if ((typeof branchFinder !== 'undefined') && branchFinder && branchFinder.analyticsPageHeader) {
+                s.pageName = branchFinder.analyticsPageHeader;
+                s.prop1 = "Public";
+                s.prop2 = branchFinder.analyticsPageHeader;
+            } else {
+                s.pageName = items.join(':');
+                s.prop1 = items[0];
+                s.prop2 = pageDepth > 1 ? items.slice(0, 2).join(':') : '';
+                s.prop3 = pageDepth > 2 ? items.slice(0, 3).join(':') : '';
+            }
+
+
+            s.prop16 = window.location.pathname;
+            s.prop39 = 'Public';
+            s.prop70 = window.location.protocol + '//' + window.location.host;
+            s.prop71 = querystring;
+            s.prop72 = window.location.hash;
+            s.eVar41 = s.pageName;
+            events = 'event20';
+
+        }
+    </script>
+
+<script>
+    barclays.privacy.gateway({
+        'cat': 'cat2',
+        'code': '%3Cscript%20type%3D%22text%2Fjavascript%22%3E%0D%0A%0D%0Avar%20s_code%3Ds.t%28%29%3B%0D%0A%0D%0Aif%20%28s_code%29document.write%28s_code%29%3B%0D%0A%0D%0A%3C%2Fscript%3E',
+        'replace': ''
+    });
+</script>
+<script>
+    // s.prop17 set after Page load event fired.
+    s.prop17 = s.pageName;
+
+    barclays.privacy.gateway({
+        'cat': 'cat2',
+        'code': '%3Cscript%20src%3D%22%2Fetc%2Fdesigns%2Fcomponentlibrary%2Fsitecatalyst%2Flinktracking.js%22%3E%3C%2Fscript%3E',
+        'replace': ''
+    });
+</script>
+
+
+
+<!-- this is the page sub footer libs -->
+</body>
+</html>

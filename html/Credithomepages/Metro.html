@@ -1,0 +1,1039 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 8]>   <html lang="en" class="nojs lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>      <html lang="en" class="nojs lt-ie10 lt-ie9 ie8"> <![endif]-->
+<!--[if IE 9]>      <html lang="en" class="nojs lt-ie10 ie9-or-better ie9"> <![endif]-->
+<!--[if ! IE]><!-->
+<html lang="en" class="nojs ie9-or-better ie10-or-better">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8"/>
+    <!--
+    <meta http-equiv="X-UA-Compatible" content="IE=10"/><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"bac4fc8811","applicationID":"19245175","transactionName":"bwFXZkJRD0sDV00PW1ZLeGRzHyVdBFVMCkBoBVJXc18PTBBbVQpRSktcXFRVGQ==","queueTime":1,"applicationTime":183,"agent":"","atts":""}</script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+    -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Credit Card,Metro Bank Credit Card,Credit,credit cards,foreign spending,free foreign transactions,foreign transactions" />
+    <meta name="description" content="Avoid annual fees with Metro Bank&#39;s straightforward Credit Card, which includes free foreign transactions for spending abroad."/>
+    <meta name="robots" content="index,follow" />
+    
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Metro Bank credit card | Personal | Metro Bank</title> 
+    <link href="/borrowing/products/credit-card/" rel="canonical" />
+    
+    <script type="text/javascript">
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TCJHM8');
+</script>
+ 
+    <script>document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/, 'js');</script>
+   
+    <link href="/Static/styles.css" rel="stylesheet" />
+
+    <!-- Hotjar Tracking Code for https://www.metrobankonline.co.uk/ -->
+<script>
+(function(h,o,t,j,a,r){
+h.hj=h.hj||function()
+
+{(h.hj.q=h.hj.q||[]).push(arguments)}
+;
+h._hjSettings=
+
+{hjid:820674,hjsv:6}
+;
+a=o.getElementsByTagName('head')[0];
+r=o.createElement('script');r.async=1;
+r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+a.appendChild(r);
+})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+
+
+
+
+
+</head>
+
+<body data-mapkey="AIzaSyAdchFRz9gQA5OXTTTjbSwDcRy2ATxIjSI" class="">
+    <!-- accessibility skip link -->
+    <a href="#skipToContent" class="u-offscreen">Skip to main content</a> 
+    
+    
+    <div class="container">
+<header class="header header_hero">
+    <nav class="header-topNav header-topNav_hero">
+        <div class="header-topNav-contents header-topNav-contents_hero">
+            <div class="header-topNav-nav header-topNav-nav_hero">
+                <div class="horizontalDragSlider horizontalDragSlider_header horizontalDragSlider_header_hero">
+                    
+                    <ul class="horizontalDragSlider-content horizontalDragSlider-content_header horizontalDragSlider-content_header_hero">
+
+                            <li class="header-topNav-list-item header-topNav-list-item_hero header-topNav-list-item_current horizontalDragSlider-initial">
+                                <a class="header-topNav-list-item-link header-topNav-list-item_hero header-topNav-list-item-link_current" href="/" target="">Personal</a>
+                            </li>
+                            <li class="header-topNav-list-item header-topNav-list-item_hero ">
+                                <a class="header-topNav-list-item-link header-topNav-list-item_hero " href="/business/" target="">Business</a>
+                            </li>
+                            <li class="header-topNav-list-item header-topNav-list-item_hero ">
+                                <a class="header-topNav-list-item-link header-topNav-list-item_hero " href="/about-us/" target="">About us</a>
+                            </li>
+
+                    </ul>
+                    <span class="horizontalDragSlider-more horizontalDragSlider-more_header horizontalDragSlider-more_header_hero"></span>
+                </div>
+            </div>
+            <div class="header-topNav-util header-topNav-util_hero">
+
+            <a class="header-link " href="/store-locator/" target="_self">
+                <span class="link-icon icon-store"></span>
+                <span class="link-text">Find a Store</span>
+            </a>
+            <a class="header-link " href="/help-and-support/" target="_self">
+                <span class="link-icon icon-help"></span>
+                <span class="link-text">Help</span>
+            </a>
+    
+        <div class="header-login">
+            <button class="header-login-btn js-header-loginDropdownToggle" aria-haspopup="true" aria-expanded="false">Log in<span></span></button>
+            <div class="header-login-dropdown" aria-hidden="true">
+                <div class="header-login-dropdown-triangle" aria-hidden="true"></div>
+                <ul class="header-login-dropdown-list">
+                        <li class="header-login-dropdown-item">
+                            <a class="header-login-dropdown-link" href="https://personal.metrobankonline.co.uk/MetroBankRetail/" target="_top">Personal and Business</a>
+                        </li>
+                        <li class="header-login-dropdown-item">
+                            <a class="header-login-dropdown-link" href="https://commercial.metrobankonline.co.uk/" target="_top">Business Online Plus</a>
+                        </li>
+                        <li class="header-login-dropdown-item">
+                            <a class="header-login-dropdown-link" href="https://commercial.metrobankonline.co.uk/" target="_top">Commercial Online Banking</a>
+                        </li>
+                        <li class="header-login-dropdown-item">
+                            <a class="header-login-dropdown-link" href="https://selfservice.metrobankonline.co.uk/" target="_top">Register and update your details</a>
+                        </li>
+                </ul>
+            </div>
+        </div>
+            <div class="header-search-btn-container">
+            <button class="header-search-btn js-header-searchDropdownToggle ">
+                <span class="u-offscreen">Open Search</span>
+                <span class="icon"></span>
+            </button>
+            <div class="header-search-dropdown" aria-hidden="true">
+                <div class="header-search-dropdown-triangle" aria-hidden="true"></div>
+                <ul class="header-search-dropdown-list">
+                        <li class="header-search-dropdown-item">
+                            <span class="link-icon icon-store"></span>
+                            <a class="header-search-dropdown-link" href="/store-locator/">Find a Store</a>
+                        </li>
+                                            <li class="header-search-dropdown-item">
+                            <span class="link-icon icon-help"></span>
+                            <a class="header-search-dropdown-link" href="/help-and-support/">Help</a>
+                        </li>
+                </ul>
+            </div>
+        </div>
+}
+</div>        
+        </div>
+    </nav>
+    <form method="GET" class="header-search header-search_hero">
+        <div class="header-search-inner header-search-inner_hero" aria-expanded="false">
+            <label for="header-search" class="u-offscreen"></label>
+            <input id="header-search" type="search" class="header-search-field header-search-field_hero" name="query" />
+            <button type="submit"></button>
+        </div>
+    </form>
+    <div class="header-container header-container_hero">
+        <a class="header-logo header-logo_hero" href="/">
+            <span class="u-offscreen">Metro Bank</span>
+        </a>
+        <nav class="header-nav header-nav_hero">
+            <ul class="header-nav-list header-nav-list_level_1 header-nav-list_hero">
+
+                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_1 header-nav-list-item_parent">
+                        <a class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_1 header-nav-list-item-link_parent "
+                           href="/bank-accounts/" target="">Bank accounts</a>
+
+                            <ul class="header-nav-list header-nav-link_hero header-nav-list_level_2 header-nav-list_shortList">
+                                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_2 header-nav-list-item_parent header-nav-list-item_shortList">
+                                            <span class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_2 header-nav-list-item-link_parent header-nav-list-item-link_shortList">Products</span>
+
+                                        <ul class="header-nav-list header-nav-list_level_3 header-nav-list_hero">
+                                                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_3">
+                                                        <a class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_3 "
+                                                           href="/bank-accounts/products/current-account/" target="">Current Account</a>
+                                                    </li>
+                                        </ul>
+                                    </li>
+                                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_2 header-nav-list-item_parent header-nav-list-item_shortList">
+                                            <span class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_2 header-nav-list-item-link_parent header-nav-list-item-link_shortList">I want some information about</span>
+
+                                        <ul class="header-nav-list header-nav-list_level_3 header-nav-list_hero">
+                                                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_3">
+                                                        <a class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_3 "
+                                                           href="/bank-accounts/i-want-some-information-about/switching-my-account/" target="">Switching my current account</a>
+                                                    </li>
+                                                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_3">
+                                                        <a class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_3 "
+                                                           href="/bank-accounts/i-want-some-information-about/using-my-card-abroad/" target="">Using my card abroad</a>
+                                                    </li>
+                                                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_3">
+                                                        <a class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_3 "
+                                                           href="/bank-accounts/i-want-some-information-about/what-i-need-to-open-a-personal-account/" target="">What you need to open a personal account</a>
+                                                    </li>
+                                                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_3">
+                                                        <a class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_3 "
+                                                           href="/bank-accounts/i-want-some-information-about/personal-service-quality/" target="">Independent service quality survey results: personal current accounts</a>
+                                                    </li>
+                                                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_3">
+                                                        <a class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_3 "
+                                                           href="/bank-accounts/i-want-some-information-about/information-about-our-personal-current-account-services/" target="">Information about our personal current account services</a>
+                                                    </li>
+                                                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_3">
+                                                        <a class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_3 "
+                                                           href="/bank-accounts/i-want-some-information-about/travel-money/" target="">Travel Money</a>
+                                                    </li>
+                                        </ul>
+                                    </li>
+                            </ul>
+                    </li>
+                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_1 header-nav-list-item_parent">
+                        <a class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_1 header-nav-list-item-link_parent "
+                           href="/savings/" target="">Savings accounts</a>
+
+                            <ul class="header-nav-list header-nav-link_hero header-nav-list_level_2 header-nav-list_shortList">
+                                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_2 header-nav-list-item_parent header-nav-list-item_shortList">
+                                            <span class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_2 header-nav-list-item-link_parent header-nav-list-item-link_shortList">Products</span>
+
+                                        <ul class="header-nav-list header-nav-list_level_3 header-nav-list_hero">
+                                                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_3">
+                                                        <a class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_3 "
+                                                           href="/savings/products/instant-access-savings/" target="">Instant Access Savings</a>
+                                                    </li>
+                                                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_3">
+                                                        <a class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_3 "
+                                                           href="/savings/products/fixed-term-savings/" target="">Fixed Term Savings</a>
+                                                    </li>
+                                                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_3">
+                                                        <a class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_3 "
+                                                           href="/savings/products/instant-access-cash-isa/" target="">Instant Access Cash ISA</a>
+                                                    </li>
+                                                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_3">
+                                                        <a class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_3 "
+                                                           href="/savings/products/fixed-rate-cash-isa/" target="">Fixed Rate Cash ISA</a>
+                                                    </li>
+                                                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_3">
+                                                        <a class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_3 "
+                                                           href="/savings/products/young-savers/" target="">Young Savers</a>
+                                                    </li>
+                                        </ul>
+                                    </li>
+                                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_2 header-nav-list-item_parent header-nav-list-item_shortList">
+                                            <span class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_2 header-nav-list-item-link_parent header-nav-list-item-link_shortList">I want some information about...</span>
+
+                                        <ul class="header-nav-list header-nav-list_level_3 header-nav-list_hero">
+                                                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_3">
+                                                        <a class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_3 "
+                                                           href="/savings/needs-based/my-savings-options/" target="">My savings options</a>
+                                                    </li>
+                                                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_3">
+                                                        <a class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_3 "
+                                                           href="/savings/needs-based/reaching-my-saving-goals/" target="">Reaching my saving goals</a>
+                                                    </li>
+                                                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_3">
+                                                        <a class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_3 "
+                                                           href="/savings/needs-based/What-I-need-to-open-a-personal-account/" target="">What I need to open a personal account</a>
+                                                    </li>
+                                        </ul>
+                                    </li>
+                            </ul>
+                    </li>
+                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_1 header-nav-list-item_parent">
+                        <a class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_1 header-nav-list-item-link_parent header-topNav-list-item-link_current"
+                           href="/borrowing/" target="">Borrowing</a>
+
+                            <ul class="header-nav-list header-nav-link_hero header-nav-list_level_2 header-nav-list_shortList">
+                                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_2 header-nav-list-item_parent header-nav-list-item_shortList">
+                                            <span class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_2 header-nav-list-item-link_parent header-nav-list-item-link_shortList">Products</span>
+
+                                        <ul class="header-nav-list header-nav-list_level_3 header-nav-list_hero">
+                                                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_3">
+                                                        <a class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_3 header-nav-list-item-link_level_3_current"
+                                                           href="/borrowing/products/credit-card/" target="">Credit Card</a>
+                                                    </li>
+                                                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_3">
+                                                        <a class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_3 "
+                                                           href="/borrowing/products/personal-loans/" target="">Personal Loans</a>
+                                                    </li>
+                                        </ul>
+                                    </li>
+                                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_2 header-nav-list-item_parent header-nav-list-item_shortList">
+                                            <span class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_2 header-nav-list-item-link_parent header-nav-list-item-link_shortList">I want some information about...</span>
+
+                                        <ul class="header-nav-list header-nav-list_level_3 header-nav-list_hero">
+                                                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_3">
+                                                        <a class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_3 "
+                                                           href="/borrowing/i-want-information-about/types-of-borrowing/" target="">Types of borrowing</a>
+                                                    </li>
+                                                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_3">
+                                                        <a class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_3 "
+                                                           href="/borrowing/i-want-information-about/help-with-my-debt/" target="">Dealing with debt</a>
+                                                    </li>
+                                                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_3">
+                                                        <a class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_3 "
+                                                           href="/borrowing/i-want-information-about/What-I-need-to-open-a-personal-account/" target="">What I need to open a personal account</a>
+                                                    </li>
+                                        </ul>
+                                    </li>
+                            </ul>
+                    </li>
+                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_1 header-nav-list-item_parent">
+                        <a class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_1 header-nav-list-item-link_parent "
+                           href="/mortgages/" target="">Mortgages</a>
+
+                            <ul class="header-nav-list header-nav-link_hero header-nav-list_level_2 header-nav-list_shortList">
+                                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_2 header-nav-list-item_parent header-nav-list-item_shortList">
+                                            <span class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_2 header-nav-list-item-link_parent header-nav-list-item-link_shortList">Products</span>
+
+                                        <ul class="header-nav-list header-nav-list_level_3 header-nav-list_hero">
+                                                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_3">
+                                                        <a class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_3 "
+                                                           href="/mortgages/products/residential-mortgages/" target="">Residential Mortgages</a>
+                                                    </li>
+                                                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_3">
+                                                        <a class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_3 "
+                                                           href="/mortgages/products/buy-to-let-mortgages/" target="">Buy to Let Mortgages</a>
+                                                    </li>
+                                                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_3">
+                                                        <a class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_3 "
+                                                           href="/mortgages/products/existing-mortgage-customers/" target="">Existing Mortgage Customers</a>
+                                                    </li>
+                                        </ul>
+                                    </li>
+                                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_2 header-nav-list-item_parent header-nav-list-item_shortList">
+                                            <span class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_2 header-nav-list-item-link_parent header-nav-list-item-link_shortList">I want some information about...</span>
+
+                                        <ul class="header-nav-list header-nav-list_level_3 header-nav-list_hero">
+                                                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_3">
+                                                        <a class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_3 "
+                                                           href="/mortgages/i-want-some-information-about/how-the-residential-mortgage-process-works/" target="">How to apply for a Metro Bank residential mortgage</a>
+                                                    </li>
+                                                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_3">
+                                                        <a class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_3 "
+                                                           href="/mortgages/i-want-some-information-about/how-the-buy-to-let-mortgage-process-works/" target="">How the Buy-to-Let Mortgage process works</a>
+                                                    </li>
+                                        </ul>
+                                    </li>
+                            </ul>
+                    </li>
+                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_1 ">
+                        <a class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_1  "
+                           href="/safe-deposit-boxes/" target="">Safe Deposit Boxes</a>
+
+                    </li>
+                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_1 header-nav-list-item_parent">
+                        <a class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_1 header-nav-list-item-link_parent "
+                           href="/ways-to-bank/" target="">Ways to bank</a>
+
+                            <ul class="header-nav-list header-nav-link_hero header-nav-list_level_2 header-nav-list_shortList">
+                                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_2 header-nav-list-item_parent header-nav-list-item_shortList">
+                                            <span class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_2 header-nav-list-item-link_parent header-nav-list-item-link_shortList">How you can bank with us</span>
+
+                                        <ul class="header-nav-list header-nav-list_level_3 header-nav-list_hero">
+                                                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_3">
+                                                        <a class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_3 "
+                                                           href="/ways-to-bank/products/personal-internet-banking/" target="">Personal Online Banking</a>
+                                                    </li>
+                                                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_3">
+                                                        <a class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_3 "
+                                                           href="/ways-to-bank/products/mobile-banking/" target="">Mobile Banking App</a>
+                                                    </li>
+                                                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_3">
+                                                        <a class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_3 "
+                                                           href="/ways-to-bank/products/apple-pay/" target="">Apple Pay</a>
+                                                    </li>
+                                                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_3">
+                                                        <a class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_3 "
+                                                           href="/ways-to-bank/products/google-pay/" target="">Google Pay</a>
+                                                    </li>
+                                        </ul>
+                                    </li>
+                                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_2 header-nav-list-item_parent header-nav-list-item_shortList">
+                                            <span class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_2 header-nav-list-item-link_parent header-nav-list-item-link_shortList">I want some information about...</span>
+
+                                        <ul class="header-nav-list header-nav-list_level_3 header-nav-list_hero">
+                                                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_3">
+                                                        <a class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_3 "
+                                                           href="/ways-to-bank/i-want-some-information-about/managing-your-online-banking--security-credentials/" target="">Managing Your Online Banking &amp; Security Credentials</a>
+                                                    </li>
+                                                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_3">
+                                                        <a class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_3 "
+                                                           href="/ways-to-bank/i-want-some-information-about/banking-securely/" target="">Banking securely</a>
+                                                    </li>
+                                        </ul>
+                                    </li>
+                            </ul>
+                    </li>
+                    <li class="header-nav-list-item header-nav-list-item_hero header-nav-list-item_level_1 ">
+                        <a class="header-nav-list-item-link header-nav-list-item-link_hero header-nav-list-item-link_level_1  "
+                           href="/private-banking/" target="">Private Banking</a>
+
+                    </li>
+
+            </ul>
+
+        </nav>
+    </div>
+</header>        
+<div class="l-container l-container_size_100">
+    <div><div class='l-row l-row_size_100'><div class="l-cell l-cell_size_100 ">
+
+
+<div class="hero hero_twoThirds hero_bgPosX_center hero_bgPosY_middle" style="background-image: url('/globalassets/final-approved-images/_aps4645.jpg');">
+    <div class="hero-content l-container-wrap">
+        <div class="hero-content-inner">
+            <h1 class="hero-headline">one rate, it&#39;s that simple</h1>
+            
+
+        </div>
+    </div>
+</div></div></div></div>
+    
+<div class="l-container-wrap">
+    <div class="subNav js-subNav">
+        <div class="breadcrumbs js-breadcrumbs">
+                    <a class="breadcrumb breadcrumb_link" href="/">Personal</a>
+                    <span class="breadcrumb-seperator">»</span>
+                    <a class="breadcrumb breadcrumb_link" href="/borrowing/">Borrowing</a>
+                    <span class="breadcrumb-seperator">»</span>
+                    <span class="breadcrumb breadcrumb_current">
+                        Credit Card
+                    </span>
+        </div>
+    </div>
+</div>
+<div id="skipToContent" tabindex="-1"></div>
+    <div><div class='l-container-wrap'><div class='l-row l-row_size_100'><div class="l-cell l-cell_size_100 ">
+<div class="headerIntroBlock headerIntroBlock-text_black headerIntroBlock_heroStyle" id="">
+
+        <h2 class="headerIntroBlock-header">
+            Credit Card
+        </h2>
+            <div class="headerIntroBlock-intro">
+            <p>Increase your spending power with our simple low rate Credit Card. Whether you want more flexibility and protection for your purchases at home or abroad, or just peace of mind should the unexpected occur, we can help you get there.</p>
+        </div>
+</div></div></div></div><div class='l-container-wrap'><div class='l-row l-row_size_33_33_33'><div class="l-cell l-cell_size_33 ">
+<div class="contentBlock contentBlock_noCta" id="">
+    <h2 class="contentBlock_noCta-header">One simple low rate</h2>
+    <div class="contentBlock_noCta-text">
+        <div class="wysiwyg">
+            <p>Get one low rate – Representative 13% <a title="APR Explained" href="/borrowing/products/credit-card/#APR-explained">APR (variable)</a> – and no annual fee.</p>
+        </div>
+    </div>
+    <div class="contentBlock_noCta-imgContainer" >
+        <div class="contentBlock_noCta-img" style="background-image: url('/globalassets/savings_-indicator.png')"></div>
+    </div>
+</div></div><div class="l-cell l-cell_size_33 ">
+<div class="contentBlock contentBlock_noCta" id="">
+    <h2 class="contentBlock_noCta-header">Free European transactions*</h2>
+    <div class="contentBlock_noCta-text">
+        <div class="wysiwyg">
+            <p><span style="text-align: center;">Going abroad? We won't charge you transaction fees for using your card in European countries.</span></p>
+        </div>
+    </div>
+    <div class="contentBlock_noCta-imgContainer" >
+        <div class="contentBlock_noCta-img" style="background-image: url('/globalassets/europe.png')"></div>
+    </div>
+</div></div><div class="l-cell l-cell_size_33 ">
+<div class="contentBlock contentBlock_noCta" id="">
+    <h2 class="contentBlock_noCta-header">Instant in-store card printing</h2>
+    <div class="contentBlock_noCta-text">
+        <div class="wysiwyg">
+            <p>No waiting for the post – come to a store and leave with your Credit Card in your hand.</p>
+        </div>
+    </div>
+    <div class="contentBlock_noCta-imgContainer" >
+        <div class="contentBlock_noCta-img" style="background-image: url('/globalassets/illustrations/card_printing2.png')"></div>
+    </div>
+</div></div></div></div><div class='l-row l-row_size_100'><div class="l-cell l-cell_size_100 ">
+<div class="messageBlock messageBlock_blue" id="Openanaccounts">
+    <div class="messageBlock-inner">
+        <div class="messageBlock-content l-container-wrap">
+            <h2 class="messageBlock-title messageBlock-title_iconsCollection">Open an account</h2>
+            
+
+            <div class="messageBlock-iconsCollection" data-matchheight=".messageBlock-iconsCollection-item" >
+                        <div class="messageBlock-iconsCollection-item">
+                            
+<div class="messageBlock-iconsCollection-item-content">
+    <div class="messageBlock-iconsCollection-item-icon" title="Come and see us in store">
+        
+
+
+    <img src='/globalassets/open-account/oval-103x.png' alt='' class="" />
+
+    </div>
+    <h3 class="messageBlock-iconsCollection-item-text">Come and see us in store</h3>
+</div>
+
+    <div  class="messageBlock-iconsCollection-item-button">
+        <a class="btn btn_red"  href="/store-locator/">Find your nearest store</a>
+    </div>
+
+                        </div>
+            </div>
+        </div>
+    </div>
+</div></div></div><div class='l-container-wrap'><div class='l-row l-row_size_100'><div class="l-cell l-cell_size_100 ">
+<div class="headerIntroBlock headerIntroBlock-text_black  " id="">
+
+        <h2 class="headerIntroBlock-header">
+            The Nuts and Bolts
+        </h2>
+            <div class="headerIntroBlock-intro">
+            <p>We’re up front with our customers about everything. We’ve created this handy summary of our Credit Card's key features so you can see the important information from the get-go.</p>
+        </div>
+</div></div></div></div><div class='l-container-wrap'><div class='l-row l-row_size_100'><div class="l-cell l-cell_size_100 ">
+<div class="detailedInfoBlock wysiwyg" id="TheNutsandBolts">
+    <table class="stacktable singlerow" border="0">
+<tbody>
+<tr><th>Rate</th><th>Monthly fees</th><th>Interest-free period</th><th>Credit limits from</th></tr>
+<tr>
+<td>Representative 13% APR (variable)</td>
+<td>Zero</td>
+<td><a title="Interest Explained" href="#Interest_explained">Up to 56 days</a></td>
+<td>£500</td>
+</tr>
+</tbody>
+</table>
+<p><a id="APR-explained"></a>APR stands for annual percentage rate. It’s intended to give you a more accurate idea of how much you are being charged when you borrow money. It takes into account the interest on the loan and other charges you have to pay, for example any arrangement fee.</p>
+<hr />
+<h4>Eligibility</h4>
+<p>You can apply for a Credit Card if:</p>
+<ul>
+<li>You’re aged 18 or over</li>
+<li>You’re resident in the UK. You’ll also need to provide proof of your identity and address. If you’re not a UK, EU, EEA or Swiss national you’ll need a valid visa/residence permit. Here’s a&nbsp;<a title="What you need to open an account" href="/bank-accounts/i-want-some-information-about/what-i-need-to-open-a-personal-account/">list of what you need</a></li>
+</ul>
+<hr />
+<h4>Using your&nbsp;credit card abroad</h4>
+<p>We won’t charge you for international credit card transactions made in most European countries. And we offer outstanding value rates in the rest of the world.</p>
+<table class=" multirow" border="0">
+<tbody>
+<tr><th>Location</th><th scope="colgroup">Card Purchase</th><th scope="colgroup">Cash Withdrawal</th></tr>
+<tr>
+<td>In Europe*</td>
+<td>FREE</td>
+<td>FREE</td>
+</tr>
+<tr>
+<td>Outside Europe*</td>
+<td>2.75%</td>
+<td>2.75% + £1.50</td>
+</tr>
+</tbody>
+</table>
+<h4><span>*Where can I use my card for free in Europe?</span>&nbsp;</h4>
+<div class="js-toggle-trigger">
+<div class="js-toggle-trigger"><button><span class="js-toggle-trigger-more">Show which countries you can use your card in for free</span><span class="js-toggle-trigger-less">Hide which countries you can use your card in for free</span></button></div><div class="js-toggle-reveal" style="display:none;"><p style="text-align: left;">When we refer to Europe we regard the countries which are part of the Single European Payments Area (SEPA).</p>
+<ul style="text-align: left;">
+<li>19 EU Euro countries - Austria, Belgium, Cyprus, Estonia, Finland, France, Germany, Greece, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, Netherlands, Portugal, Slovakia, Slovenia, Spain</li>
+<li>8 EU non-Euro countries - Bulgaria, Croatia, Czech Republic, Denmark, Hungary, Poland, Romania, Sweden</li>
+<li>2 non-EU, Euro countries – Monaco, San Marino</li>
+<li>4 non-EU, non-Euro countries - Iceland, Liechtenstein, Norway, Switzerland</li>
+</ul>
+<p style="text-align: left;"><span>All territories are included by their associated owning country.</span></p></div>
+</div>
+<p>If you use your card abroad, any foreign currency transaction will be converted into sterling on the day it’s paid out of your account. The exchange rate is set by MasterCard®.</p>
+<p>MasterCard® is a registered trademark of MasterCard International Incorporated.&nbsp;</p>
+<hr />
+<h4>Features explained</h4>
+<h4><a id="Interest_explained"></a>Interest</h4>
+<ul>
+<li><strong>You get up to 56 days interest-free for purchases</strong> if you pay your balance in full and on time. (The first interest-free period for purchases may be shorter if you take out your credit card part-way through a month.) If you don’t pay your balance in full, we charge interest daily from the transaction date until we receive your repayment.</li>
+<li><strong>There’s no interest-free period on cash advances or balance transfers.</strong> You build up interest from the day you take out cash or make a transfer until you pay the money back.</li>
+</ul>
+<h4>Contactless card</h4>
+<p>All Metro Bank cards support contactless payments. Just tap your card on the reader at the till and you're done.</p>
+<h4>No annual fee</h4>
+<p>There’s no annual fee – just one simple rate of <a title="APR Explained" href="#APR-explained">13% Representative APR (variable)</a>.</p>
+<h4>Text and email alerts</h4>
+<p>Get mini-statements delivered straight to your phone or email to help you manage your finances when you’re close to your credit limit.</p>
+<h4>Paperless statements</h4>
+<p>We’ll email you every month to let you know your monthly statement is available online. If you need a paper statement, just ask.</p>
+<hr />
+<h4>What we consider</h4>
+<p>When you apply for a credit card we use a process called 'credit scoring' to perform a credit assessment of you. Your score helps us decide whether we can offer you a credit card and what your credit limit will be.</p>
+<p>As a responsible bank, we work with you to make sure you can afford your borrowing. We won’t give you a card if we think it will be bad for your financial wellbeing, based on our understanding of your personal circumstances. We don’t want to leave you struggling to repay your credit card.</p>
+<hr />
+<h4>Credit card representative example</h4>
+<table class=" stacktable multirow" border="0">
+<tbody>
+<tr><th>Representative APR&nbsp;</th><th>&nbsp;</th><th>Assumed Credit Limit</th></tr>
+<tr>
+<td>13% APR (variable)</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>£1,200</td>
+</tr>
+</tbody>
+</table>
+<h4>Get all the details to read at your leisure</h4>
+<p>Download our PDFs to read when you like -&nbsp;they contain all the ins and outs of our Credit Card.</p>
+<p><a class="btn_red" title="Credit Card Details" href="/globalassets/documents/customer_documents/personal/creditcard_importantinformationsummary.pdf" target="_blank">Credit Card Details (PDF)(897KB)</a></p>
+<p><a class="btn_red" title="Personal Credit Card Other Terms (PDF) (164KB)" href="/globalassets/documents/customer_documents/personal/personal-credit-card---ts-and-cs.pdf" target="_blank">Personal Credit Card Other Terms (PDF) (164KB)</a></p>
+<p><a title="Our Service Relationship with Personal Customers" href="/globalassets/legal-information/our-service-relationship-with-personal-customers.pdf" target="_blank">Our Service Relationship with Personal Customers (PDF)(1.2MB)</a></p>
+</div>
+</div></div></div><div class='l-row l-row_size_100'><div class="l-cell l-cell_size_100 ">
+<div class="l-container-wrap">
+    <div class="map" id="" data-url="/api/location/getlocationlist/" data-options="mapType=nearest,directions=true,geolocate=true,initLat=52.63330078125,initLng=1.30000305175781,userLat=52.63330078125,userLng=1.30000305175781,search=false,zoom=15,dfltLat=51.5176895323032,dfltLng=-0.120651125907898">
+        <p>
+            
+            <img src="/images/assets/loading_indicator_0-60.gif" alt="Loading, please wait"/>
+            <span></span>
+        </p>
+        <fieldset class="map-view-switch">
+            <legend class="u-offscreen">Toggle between map and list views</legend>
+            <input type="radio" class="radioSwitch-radio" name="mobile-views" id="mapview" value="map" checked>
+            <label class="radioSwitch-label radioSwitch-label_first" for="mapview">Map view</label>
+            <input type="radio" class="radioSwitch-radio" name="mobile-views" id="listview" value="list">
+            <label class="radioSwitch-label radioSwitch-label_last" for="listview">List view</label>
+        </fieldset>
+        <div class="map-wrapper">
+            <div class="map-buttons-overlay">
+                <a class="find-store" href="/store-locator/">Find Store</a>
+                <div class="map-zoom">
+                    <button class="zoomin" aria-label="Zoom in"><span class="u-offscreen">Zoom in</span></button>
+                    <button class="zoomout" aria-label="Zoom out"><span class="u-offscreen">Zoom out</span></button>
+                </div>
+            </div>
+            <div class="map-inset">
+                <div class="info" aria-label="Nearest Store Information">
+                    <section class="infocard">
+                        <p class="section-heading"></p>
+                        <div></div>
+                        <button class="store_directions">Get Directions</button>
+                    </section>
+                </div>
+            </div>
+            <div class="map-container" tab-index="0" aria-label="Map showing visual representation of Nearest Store Information"></div>
+        </div>
+    </div>
+    <div id="dataErr" data-title="" data-imgsrc="" data-imgalt="" data-copy=""></div>
+
+</div></div></div><div class='l-container-wrap'><div class='l-row l-row_size_100'><div class="l-cell l-cell_size_100 ">
+<div class="headerIntroBlock headerIntroBlock-text_black  " id="">
+
+        <h2 class="headerIntroBlock-header">
+            FAQs
+        </h2>
+    </div></div></div></div><div class='l-container-wrap'><div class='l-row l-row_size_100'><div class="l-cell l-cell_size_100 ">
+    <div class="contentBlock" id="FAQ">
+        <div class="accordion">
+            <ul class="accordion-list" >
+
+
+<li class="accordion-item">
+    <div class="accordion-item-heading">
+        <h3 class="accordion-heading-main">How do I apply for a Credit Card?</h3>
+    </div>
+        <div class="accordion-item-content">
+            <div class="accordion-item-content-inner">
+                <div class="wysiwyg">
+                    <p>Just pop into a store. We’re open long hours, including after work and at weekends.&nbsp;</p>
+<p><a title="What you need to bring with you to open an account" href="/bank-accounts/i-want-some-information-about/what-i-need-to-open-a-personal-account/">What you need to bring with you</a></p>
+                </div>
+            </div>
+        </div>
+
+</li>
+
+<li class="accordion-item">
+    <div class="accordion-item-heading">
+        <h3 class="accordion-heading-main">How much credit can I get?</h3>
+    </div>
+        <div class="accordion-item-content">
+            <div class="accordion-item-content-inner">
+                <div class="wysiwyg">
+                    <p>The credit limit we give you depends on how much you’ll be able to comfortably repay, based on our understanding of your personal circumstances. We assess this using a process called credit scoring. This looks at things like your credit history and how long you’ve lived at your current address to help us come to a decision.</p>
+<p>Find out more in:</p>
+<p><a title="Guide to the use of your information " href="/about-us/privacy-and-security/">Guide to the use of your information</a></p>
+<p><a title="Our Service Relationship with Personal Customers" href="/globalassets/legal-information/our-service-relationship-with-personal-customers.pdf" target="_blank">Our Service Relationship with Personal Customers</a></p>
+                </div>
+            </div>
+        </div>
+
+</li>
+
+<li class="accordion-item">
+    <div class="accordion-item-heading">
+        <h3 class="accordion-heading-main">Are there any fees?</h3>
+    </div>
+        <div class="accordion-item-content">
+            <div class="accordion-item-content-inner">
+                <div class="wysiwyg">
+                    <p>There’s no annual fee, just one simple low rate of&nbsp;<a title="APR Explained" href="/borrowing/products/credit-card/">13% Representative APR (Variable)</a>.<a title="APR-explained" href="/borrowing/products/credit-card/#APR-explained"><br /></a></p>
+<p>There are charges for using your card outside Europe.</p>
+<p><a title="Read more about using your card abroad" href="/bank-accounts/i-want-some-information-about/using-my-card-abroad/">Read more about using your card abroad</a>&nbsp;</p>
+                </div>
+            </div>
+        </div>
+
+</li>
+
+            </ul>
+        </div>
+    </div>
+</div></div></div><div class='l-container-wrap'><div class='l-row l-row_size_100'><div class="l-cell l-cell_size_100 ">
+<div class="headerIntroBlock headerIntroBlock-text_black  " id="">
+
+        <h2 class="headerIntroBlock-header">
+            Your ways to bank
+        </h2>
+    </div></div></div></div><div class='l-container-wrap'><div class='l-row l-row_size_25_25_25_25'><div class="l-cell l-cell_size_25 ">
+<div class="contentBlock contentBlock_default" id="">
+    <div class="contentBlock_default-content">
+        <div class="contentBlock_default-imgContainer mask_none" title="Online">
+            
+
+
+    <img src='/globalassets/ways-to-bank---business/online3x.png' alt='' class="contentBlock_default-img" />
+
+        </div>
+
+        <h2 class="contentBlock_default-header">Online</h2>
+        <div class="contentBlock_default-text">
+            <div class="wysiwyg">
+                <p>Metro Bank 24/7. Check balances, make payments, see transactions and open new accounts any time - all with internet banking.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div  class="contentBlock-cta contentBlock_default-cta">
+        <a class="contentBlock-cta-link contentBlock_default-cta-link"  href="/ways-to-bank/products/personal-internet-banking/">Internet banking</a>
+    </div>
+
+</div></div><div class="l-cell l-cell_size_25 ">
+<div class="contentBlock contentBlock_default" id="">
+    <div class="contentBlock_default-content">
+        <div class="contentBlock_default-imgContainer mask_none" title="Mobile">
+            
+
+
+    <img src='/globalassets/ways-to-bank---business/mobile3x.png' alt='' class="contentBlock_default-img" />
+
+        </div>
+
+        <h2 class="contentBlock_default-header">Mobile</h2>
+        <div class="contentBlock_default-text">
+            <div class="wysiwyg">
+                <p>Control your money on the move with our mobile banking app. Check balances, move money, make payments and more wherever you are.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div  class="contentBlock-cta contentBlock_default-cta">
+        <a class="contentBlock-cta-link contentBlock_default-cta-link"  href="/ways-to-bank/products/mobile-banking/">Mobile banking</a>
+    </div>
+
+</div></div><div class="l-cell l-cell_size_25 ">
+<div class="contentBlock contentBlock_default" id="">
+    <div class="contentBlock_default-content">
+        <div class="contentBlock_default-imgContainer mask_none" title="In-store">
+            
+
+
+    <img src='/globalassets/ways-to-bank---business/instore3x.png' alt='' class="contentBlock_default-img" />
+
+        </div>
+
+        <h2 class="contentBlock_default-header">In-store</h2>
+        <div class="contentBlock_default-text">
+            <div class="wysiwyg">
+                <p>A friendly face and a quick answer. And all the usual payment services too. We're open 362 days a year</p>
+            </div>
+        </div>
+    </div>
+    
+    <div  class="contentBlock-cta contentBlock_default-cta">
+        <a class="contentBlock-cta-link contentBlock_default-cta-link"  href="/store-locator/">Find a store</a>
+    </div>
+
+</div></div><div class="l-cell l-cell_size_25 ">
+<div class="contentBlock contentBlock_default" id="">
+    <div class="contentBlock_default-content">
+        <div class="contentBlock_default-imgContainer mask_none" title="Telephone">
+            
+
+
+    <img src='/globalassets/ways-to-bank---business/phone3x.png' alt='' class="contentBlock_default-img" />
+
+        </div>
+
+        <h2 class="contentBlock_default-header">Telephone</h2>
+        <div class="contentBlock_default-text">
+            <div class="wysiwyg">
+                <p>If you need help you can talk to a real person in our UK contact centre 24 hours a day, 7 days a week, 365 days a year</p>
+            </div>
+        </div>
+    </div>
+    
+    <div  class="contentBlock-cta contentBlock_default-cta">
+        <a class="contentBlock-cta-link contentBlock_default-cta-link" target='_top' href="/help-and-support/get-in-touch/">Contact us by phone</a>
+    </div>
+
+</div></div></div></div><div class='l-container-wrap'><div class='l-row l-row_size_100'><div class="l-cell l-cell_size_100 ">
+<div class="headerBlock headerBlock_center" id="">
+    <h2 class="headerBlock-title">some things you might like...</h2>
+</div></div></div></div><div class='l-container-wrap'><div class='l-row l-row_size_50_50'><div class="l-cell l-cell_size_50 ">
+<div class="contentBlock contentBlock_colourBar contentBlock_colourBar_blue" id="">
+    <div class="contentBlock_colourBar-imgContainer" >
+        <div class="contentBlock_colourBar-img" style="background-image: url('/globalassets/archived_images/recommendations/switch-guarantee.png')"></div>
+    </div>
+
+    <h2 class="contentBlock_colourBar-header">SWITCHING TO US</h2>
+    <h3 class="contentBlock_colourBar-subheader">7-day Switch Guarantee</h3>
+    <div class="contentBlock_colourBar-text">
+        <div class="wysiwyg">
+            <p>Switching your current account to Metro Bank is simple and hassle-free. And we guarantee to have it all done and dusted for you in 7 days.</p>
+        </div>
+    </div>
+    
+    <div  class="contentBlock_colourBar-cta contentBlock-cta">
+        <a class="contentBlock-cta-link" target='_top' href="/bank-accounts/i-want-some-information-about/switching-my-account/">Switching your current account</a>
+    </div>
+
+</div>
+
+
+
+
+</div><div class="l-cell l-cell_size_50 ">
+<div class="contentBlock contentBlock_colourBar contentBlock_colourBar_green" id="">
+    <div class="contentBlock_colourBar-imgContainer" >
+        <div class="contentBlock_colourBar-img" style="background-image: url('/globalassets/illustrations/card_printing_large.jpg')"></div>
+    </div>
+
+    <h2 class="contentBlock_colourBar-header">BANKING WITH US</h2>
+    <h3 class="contentBlock_colourBar-subheader">Same-day account opening</h3>
+    <div class="contentBlock_colourBar-text">
+        <div class="wysiwyg">
+            <p>Apply in store and we'll print your card there and then. Having the right documents will help make the process go smoothly.</p>
+        </div>
+    </div>
+    
+    <div  class="contentBlock_colourBar-cta contentBlock-cta">
+        <a class="contentBlock-cta-link" target='_top' href="/bank-accounts/i-want-some-information-about/what-i-need-to-open-a-personal-account/">What you need to open a personal account</a>
+    </div>
+
+</div>
+
+
+
+
+</div></div></div><div class='l-container-wrap'><div class='l-row l-row_size_50_50'><div class="l-cell l-cell_size_50 ">
+<div class="contentBlock contentBlock_colourBar contentBlock_colourBar_red" id="">
+    <div class="contentBlock_colourBar-imgContainer" >
+        <div class="contentBlock_colourBar-img" style="background-image: url('/globalassets/sdb.jpg')"></div>
+    </div>
+
+    <h2 class="contentBlock_colourBar-header">HOW WE CAN HELP</h2>
+    <h3 class="contentBlock_colourBar-subheader">A safer spot</h3>
+    <div class="contentBlock_colourBar-text">
+        <div class="wysiwyg">
+            <p>Never mind under a mattress or in a sock drawer – your valuables need proper security. We have 5 sizes of Safe Deposit Boxes available.</p>
+        </div>
+    </div>
+    
+    <div  class="contentBlock_colourBar-cta contentBlock-cta">
+        <a class="contentBlock-cta-link"  href="/safe-deposit-boxes/">Reserve a Safe Deposit Box</a>
+    </div>
+
+</div>
+
+
+
+
+</div><div class="l-cell l-cell_size_50 ">
+<div class="contentBlock contentBlock_colourBar contentBlock_colourBar_purple" id="">
+    <div class="contentBlock_colourBar-imgContainer" >
+        <div class="contentBlock_colourBar-img" style="background-image: url('/globalassets/legal-information/fscs-badge.png')"></div>
+    </div>
+
+    <h2 class="contentBlock_colourBar-header">FSCS</h2>
+    <h3 class="contentBlock_colourBar-subheader">Protecting your money</h3>
+    <div class="contentBlock_colourBar-text">
+        <div class="wysiwyg">
+            <p>Your eligible deposits with Metro Bank are protected by the FSCS.</p>
+        </div>
+    </div>
+    
+    <div  class="contentBlock_colourBar-cta contentBlock-cta">
+        <a class="contentBlock-cta-link" target='_blank' title='How the FSCS protects your money (Opens in new window)' href="https://www.fscs.org.uk/">How the FSCS protects your money</a>
+    </div>
+
+</div>
+
+
+
+
+</div></div></div></div>
+</div>
+
+<footer class="footer edge_top_reverse l-container l-container_size_100">
+    <div class="l-container-wrap">
+        <div class="footer-primaryLinksContainer">
+            <ul class="footer-primaryLinks" >
+                    <li class="item">
+                        <a class="text" href="/store-locator/"><span>Store Locator</span></a>
+                    </li>
+                    <li class="item">
+                        <a class="text" href="/about-us/careers/"><span>Careers</span></a>
+                    </li>
+                    <li class="item">
+                        <a class="text" href="/about-us/press-releases/"><span>Press</span></a>
+                    </li>
+                    <li class="item">
+                        <a class="text" href="/intermediaries/"><span>Mortgage Intermediaries</span></a>
+                    </li>
+                    <li class="item">
+                        <a class="text" href="/investor-relations/"><span>Investor Relations</span></a>
+                    </li>
+                    <li class="item">
+                        <a class="text" target="_blank" href="https://developer.metrobankonline.co.uk/"><span>Developer site</span></a>
+                    </li>
+                    <li class="item">
+                        <a class="text" target="_blank" href="/globalassets/legal-information/modern-slavery-statement-2018.pdf"><span>Modern Slavery Act (PDF)</span></a>
+                    </li>
+            </ul>
+            <div class="footer-socialMediaContainer">
+                <ul class="footer-socialMedia" >
+                        <li class="footer-socialMedia-item">
+                            <a href="https://www.linkedin.com/company/metro-bank-uk-" class="footer-socialMedia-icon" target="_blank">
+
+
+    <img src='/contentassets/ff293d4616ff4ed084f0f6c1c77f5a13/social-media/linkedin.png' alt='Linkedin' class="footer-socialMedia-image" />
+</a>
+                        </li>
+                        <li class="footer-socialMedia-item">
+                            <a href="http://www.twitter.com/Metro_Bank" class="footer-socialMedia-icon" target="_blank">
+
+
+    <img src='/contentassets/ff293d4616ff4ed084f0f6c1c77f5a13/social-media/icon-twitter.png' alt='Twitter' class="footer-socialMedia-image" />
+</a>
+                        </li>
+                        <li class="footer-socialMedia-item">
+                            <a href="https://www.youtube.com/user/MetroBankChannel" class="footer-socialMedia-icon" target="_blank">
+
+
+    <img src='/contentassets/ff293d4616ff4ed084f0f6c1c77f5a13/social-media/icon-youtube.png' alt='YouTube' class="footer-socialMedia-image" />
+</a>
+                        </li>
+                        <li class="footer-socialMedia-item">
+                            <a href="https://www.instagram.com/metro_bank/" class="footer-socialMedia-icon" target="_blank">
+
+
+    <img src='/globalassets/footer/instagram-icon-footer.png' alt='Instagram logo' class="footer-socialMedia-image" />
+</a>
+                        </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-smallPrint">
+            <div class="wysiwyg">
+                <p class="wysiwyg-text-small">Your eligible deposits with Metro Bank PLC are protected up to a total of £85,000 by the Financial Services Compensation Scheme, the UK's deposit guarantee scheme. Any deposits you hold above the limit are unlikely to be covered. For further information visit <a title="FSCS Website" href="http://www.fscs.org.uk">www.fscs.org.uk</a>.</p>
+<p class="wysiwyg-text-small">Metro Bank PLC. Registered in England and Wales. Company number: 6419578. Registered office: One Southampton Row, London, WC1B 5HA. We are authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and Prudential Regulation Authority. Metro Bank PLC is an independent UK Bank - it is not affiliated with any other bank or organisation (including the METRO newspaper or its publishers) anywhere in the world. "Metrobank" is the registered trademark of Metro Bank PLC.</p>
+            </div>
+        </div>
+
+        <ul class="footer-awards" >
+
+                <li class="footer-award footer-award_award1">
+                    
+
+
+    <img src='/globalassets/illustrations/moneywise-logo---transparent.png' alt='' class="footer-award-logo" />
+
+                    <span class="footer-award-text">Most Trusted Financial Provider 2017</span>
+                </li>
+                <li class="footer-award">
+                    
+
+
+    <img src='/globalassets/illustrations/moneywise-logo---transparent.png' alt='' class="footer-award-logo" />
+
+                    <span class="footer-award-text">Most Trusted Current Account Provider 2017</span>
+                </li>
+                <li class="footer-award">
+                    
+
+
+    <img src='/contentassets/ff293d4616ff4ed084f0f6c1c77f5a13/award-logos/moneynet-1.png' alt='' class="footer-award-logo" />
+
+                    <span class="footer-award-text">Moneynet Awards 2018: Best All Round Personal Finance Provider</span>
+                </li>
+        </ul>
+        <div class="footer-secondaryLinksContainer">
+            <ul class="footer-secondaryLinks" >
+                    <li class="item">
+                        <a class="text" href="/about-us/accessibility/">Accessibility</a>
+                    </li>
+                    <li class="item">
+                        <a class="text" href="/about-us/legal-information/">Legal Information</a>
+                    </li>
+                    <li class="item">
+                        <a class="text" href="/about-us/privacy-and-security/">Privacy and Security</a>
+                    </li>
+                    <li class="item">
+                        <a class="text" href="/sitemap/">Sitemap</a>
+                    </li>
+            </ul>
+
+            <small class="footer-copyright">
+                Copyright 2018 Metro Bank. All rights reserved
+            </small>
+        </div>
+    </div>
+</footer>    </div>
+    
+<noscript>
+	<img src="/util/LiveMonitor/Tracking/Index?contentId=1060&amp;languageId=en" alt="" style="display:none" />
+</noscript>
+
+<script type="text/javascript" src="https://dl.episerver.net/13.0.3/epi-util/find.js"></script>
+<script type="text/javascript">
+void(function(){var tUrl = "/util/LiveMonitor/Tracking/Index?contentId=1060&languageId=en";tUrl += (tUrl.indexOf("?") > 0 ? "&" : "?");var tUrl1 = tUrl + "r=" + Math.random() + "&referrer=" + escape(document.referrer);document.write("<img id='LiveMonTransparentImage' src='" + tUrl1 + "' alt='' width='1' height='1'/>");window.onpageshow = function (ev) {if (ev && ev.persisted){document.getElementById("LiveMonTransparentImage").src = tUrl + "r=" + Math.random() + "&referrer=" + escape(document.referrer);}}}());
+</script>
+<script type="text/javascript">
+if(FindApi){var api = new FindApi();api.setApplicationUrl('/');api.setServiceApiBaseUrl('/find_v2/');api.processEventFromCurrentUri();api.bindWindowEvents();api.bindAClickEvent();api.sendBufferedEvents();}
+</script>
+
+    <script src="/Scripts/app.js"></script>
+    
+    
+    
+</body>
+</html>
