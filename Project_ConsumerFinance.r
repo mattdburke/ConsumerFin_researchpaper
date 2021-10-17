@@ -7,10 +7,6 @@
 
 # Last modified: 26/04/2019
 
-# blah blaj
-
-#setwd("C:/Users/mattb/Documents/University/PhD/Project_ConsumerFinance")
-#setwd("C:/Users/mattb/OneDrive - University of Bradford/UEA/PhD/Project_ConsumerFinance")
 setwd("C:/Users/mattb/Documents/GitHub/ConsumerFin_researchpaper")
 
 library(psych)
